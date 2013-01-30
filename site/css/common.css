@@ -96,7 +96,7 @@ td.bmenu {
 	width: 95px;
 /*	background-color: #FFEBCD; /* blanched almond */
 /*	background-color: aqua; /* blanched almond */
-	background-image: url(tab.gif);
+	background-image: url('../images/tab.gif');
 	color: black;
 	font-size: 10pt;
 	font-weight: 600;
@@ -111,7 +111,7 @@ td.bmenu {
 td.imenu { width: 97px;
 /*	height: 25px; */
 	background-color: #ffff99;
-	background-image: url(images/textbox.gif);
+	background-image: url('../images/textbox.gif');
 	color: black;
 	font-size: 9pt;
 	font-weight: bold;
@@ -207,7 +207,7 @@ table {
 	}	*/
 
 redbulet{
-	background-image: url(redbulet.gif);
+	background-image: url('../images/redbulet.gif');
 	width="12";
-	height="12">
+	height="12";
 	}
