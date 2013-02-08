@@ -1,0 +1,59 @@
+/* A bit of color */
+body {
+	background-color: #fff;
+}
+
+/* Banner */
+#banner {
+	background-image: url('../images/banner.png');
+	background-repeat: no-repeat;
+}
+
+
+/* Home page */
+#concert_promo img {
+	height: 130px;
+	margin-left: 1em;
+	float: right;
+}
+
+#society_promo img {
+	height: 180px;
+	margin-right: 1em;
+	float: left;
+}
+
+#homepage_image {
+	width: 23.35em;
+}
+
+/* sponsors */
+#sponsors {
+	display: block;
+	padding: 1em;
+}
+
+#making_music {
+	height: 4em;
+	float: left;
+}
+
+#chalice {
+	float: right;
+	display: block;
+	text-align: center;
+}
+
+#community_foundation {
+	height: 4em;
+}
+
+#chalice_fund {
+	height: 1.5em;
+}
+
+#come_and_sing {
+	width: 17em;
+	float: left;
+	margin: 0em 0.6em 0.6em 0em;
+}

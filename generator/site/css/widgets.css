@@ -1,0 +1,188 @@
+
+/* Link Button */
+.link_button {
+	border: 1px solid black;
+	padding: 0.35em 2.0em;
+	font-size: 0.9em;
+	font-weight: normal;
+	font-family: helvetica, arial, sans-serif;
+	text-decoration: None;
+	color: #EEEEEE;
+}
+
+
+/* Event Promotion */
+.event_promo {
+	display: block;
+	border: 1px solid #336699;
+	border-width: 1px 0px 1px 0px;
+}
+
+.event_promo h2 {
+	font-size: 1.2em;
+}
+
+.event_promo .details {
+	color: #336699;
+	font-family: helvetica, arial, sans-serif;
+	font-size: 1em;
+}
+
+.event_promo .works {
+	display: block;
+}
+
+.event_promo .works dt {
+	float: left;
+	width: 8em;
+}
+
+.event_promo .works dd {
+	float: clear;
+	font-style: italic;
+}
+
+.event_promo img {
+	display: block;
+	margin-left: 1em;
+	float: right;
+}
+
+
+/* Performance */
+.performance img {
+	width: 200px;
+}
+
+.performance {
+	display: block;
+	margin-bottom: 0.6em;
+}
+
+.performance .decor {
+	display: block;
+	float: left;
+}
+
+.performance .decor .perf_button,
+.performance .decor .perf_img {
+	display: block;
+	text-align: center;
+}
+
+.performance .details {
+	float: left;
+	color: #003366;
+	margin-left: 1em;
+	display: block;
+	font-family: helvetica, arial, sans-serif;
+}
+
+.performance .details h2 {
+	margin-top: 0em;
+}
+
+.performance .details span {
+	display: block;
+	margin: 0.6em 0em;
+	font-size: 0.9em;
+	font-weight: bold;
+}
+
+.performance .details td,
+.performance .details table {
+	margin: 1em 0em;
+	border: 0px none #333333; 
+	border-collapse: collapse;
+	padding: 0em;
+}
+
+.performance .details td {
+	padding: 0.2em 1.4em 0.2em 0em;
+	font-size: 0.85em;
+}
+
+.work_composer,
+.performer_label {
+	font-weight: bold;
+}
+
+.work_title {
+	font-style: italic;
+}
+
+/* */
+#left_menu {
+	float: left;
+}
+#right_menu {
+	float: right;
+}
+
+.clear_float {
+	display: block;
+	clear: both;
+}
+
+.menu {
+	margin:  0px 0px;
+	padding: 0px 0px;
+	overflow: auto;
+}
+.menu li {
+	float: left;
+	list-style-type: none;
+	margin:  0em 0.1em;
+}
+.menu li a {
+	display: block;
+	padding:  0.35em 0.6em;
+	width: 6em;
+	text-align: center;
+	color: #EEEEEE;
+	font-size: 0.9em;
+	font-family: helvetica, arial, sans-serif;
+	text-decoration: none;
+}
+
+#social li a {
+	width: 2em;
+}
+
+.menu li, .link_button {
+	background: #003366; /* Old browsers */
+	/* FF3.6+ */
+	background: -moz-linear-gradient(top, #003366 0%, #336699 50%, #336699 51%, #003366 100%);
+	/* Chrome,Safari4+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#003366), color-stop(50%,#336699), color-stop(51%,#336699), color-stop(100%,#003366));
+	/* Chrome10+,Safari5.1+ */
+	background: -webkit-linear-gradient(top, #003366 0%,#336699 50%,#336699 51%,#003366 100%);
+	/* Opera 11.10+ */
+	background: -o-linear-gradient(top, #003366 0%,#336699 50%,#336699 51%,#003366 100%);
+	/* IE10+ */
+	background: -ms-linear-gradient(top, #003366 0%,#336699 50%,#336699 51%,#003366 100%);
+	/* W3C */
+	background: linear-gradient(to bottom, #003366 0%,#336699 50%,#336699 51%,#003366 100%);
+	/* IE6-9 */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#003366', endColorstr='#003366',GradientType=0 );
+}
+
+.menu li:hover,
+.menu li:hover a,
+.link_button:hover {
+	background: #0650AA; /* Old browsers */
+	/* FF3.6+ */
+	background: -moz-linear-gradient(top, #0650AA 0%, #4477aa 50%, #4477aa 51%, #0650AA 100%);
+	/* Chrome,Safari4+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#0650AA), color-stop(50%,#4477aa), color-stop(51%,#4477aa), color-stop(100%,#0650AA));
+	/* Chrome10+,Safari5.1+ */
+	background: -webkit-linear-gradient(top, #0650AA 0%,#4477aa 50%,#4477aa 51%,#0650AA 100%);
+	/* Opera 11.10+ */
+	background: -o-linear-gradient(top, #0650AA 0%,#4477aa 50%,#4477aa 51%,#0650AA 100%);
+	/* IE10+ */
+	background: -ms-linear-gradient(top, #0650AA 0%,#4477aa 50%,#4477aa 51%,#0650AA 100%);
+	/* W3C */
+	background: linear-gradient(to bottom, #0650AA 0%,#4477aa 50%,#4477aa 51%,#0650AA 100%);
+	/* IE6-9 */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0650AA', endColorstr='#0650AA',GradientType=0 );
+}
