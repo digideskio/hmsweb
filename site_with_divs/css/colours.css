@@ -1,0 +1,27 @@
+
+#banner {
+	background-color: green;
+}
+#nav_bar {
+	background-color: blue;
+}
+#nav_menu {
+	background-color: red;
+}
+#social {
+	background-color: red;
+}
+/* Main content */
+.img_col, #lhs {
+	background-color: violet;
+}
+.content_col, #rhs {
+	background-color: purple;
+}
+#footer {
+	background-color: blue;
+}
+
+.performance img {
+	background-color: green;
+}
