@@ -1,0 +1,156 @@
+<html>
+
+<head>
+	<title>Widgets throughout site</title>
+	<link rel="stylesheet" type="text/css" href="layout.css" />
+	<link rel="stylesheet" type="text/css" href="style.css" />
+	<link rel="stylesheet" type="text/css" href="widgets.css" />
+	<link rel="stylesheet" type="text/css" href="colours.css" />
+	<!-- Some local styles to help layout the pages without content -->
+	<style>
+		.event_promo img {
+			width: 130px;
+			height: 130px;
+		}
+		.performance img {
+			height: 250px;
+		}
+	</style>
+</head>
+
+<body>
+
+<h1>Link Button</h1>
+
+<a class="link_button" href="#">Buy Tickets</a>
+
+<p>A link styled as a button...</p>
+
+<h1>Event Promotion</h1>
+
+<p>For example on the front page:</p>
+
+<span class="event_promo">
+
+	<img />
+
+	<h2>Concert Name</h2>
+
+	<span class="details">
+		<!-- performance  works -->
+		<dl class="works">
+			<dt>Composer 1</dt>
+			<dd>Title of first work</dd>
+			<dt>Another composer 2</dt>
+			<dd>Title of second work</dd>
+		</dl>
+		<!-- performance details -->
+		<span class="date">Saturday x<super>th</super> Month</span>
+		<span class="location">Haselmere Hall</span>
+		<span class="when">19:30</span>
+	</span>
+
+	<span class="clear_float"></span>
+</span>
+
+<h1>Concert Details</h1>
+
+<p>For example, on the concert page:</p>
+
+<span class="performance">
+
+	<span class="decor">
+		<span class="perf_img">
+			<img />
+		</span>
+		<br/>
+		<span class="perf_button">
+			<a class="link_button" href="#">Buy Tickets</a>
+		</span>
+	</span>
+
+	<span class="details">
+		<h2>Concert Name</h2>
+
+		<span class="date">Saturday x<super>th</super> Month, hh:mm</span>
+		<span class="location">Haselmere Hall (<a href="#">map</a>)</span>
+		<span class="tickets">
+			Tickets: &pound;12.50</br>
+			Under 18: Half price
+		</span>
+
+		<!-- performance  soloists -->
+		<table class="performers">
+			<tr>
+				<td class="performer_label">Soloist:</td>
+				<td class="performer_value">Helen Owlett (Clarinet)</td>
+			</tr>
+		</table>
+
+		<!-- performance  works -->
+		<table class="works">
+			<tr>
+				<td class="work_composer">Composer 1</td>
+				<td class="work_title">Title of first work</td>
+			</tr>
+			<tr>
+				<td class="work_composer">Another composer 2</td>
+				<td class="work_title">Title of second work Title of second work</td>
+			</tr>
+			<tr>	
+				<td class="work_composer">Another composer 2</td>
+				<td class="work_title">Title of second work</td>
+			</tr>
+			<tr>
+				<td class="work_composer">Another composer 2</td>
+				<td class="work_title">Title of second work</td>
+			</tr>
+			<tr>
+				<td class="work_composer">Another composer 2</td>
+				<td class="work_title">Title of second work</td>
+			</tr>
+			<tr>
+				<td class="work_composer">Another composer 2</td>
+				<td class="work_title">Title of second work</td>
+			</tr>
+			<tr>
+				<td class="work_composer">Another composer 2</td>
+				<td class="work_title">Title of second work</td>
+			</tr>
+			<tr>
+				<td class="work_composer">Another composer 2</td>
+				<td class="work_title">Title of second work Title of second work</td>
+			</tr>
+		</table>
+	</span>
+
+	<span class="clear_float"></span>
+</span>
+
+
+<h1>Menus</h1>
+
+<ul class="menu">
+	<li><a href="#">Item One</a></li>
+	<li><a href="#">Item Two</a></li>
+	<li><a href="#">Item Three</a></li>
+</ul>
+
+<p>Example menu set by using class="menu"</p>
+
+<ul id="left_menu" class="menu">
+	<li><a href="#">Item One</a></li>
+	<li><a href="#">Item Two</a></li>
+	<li><a href="#">Item Three</a></li>
+</ul>
+<ul id="right_menu" class="menu">
+	<li><a href="#">Item One</a></li>
+	<li><a href="#">Item Two</a></li>
+	<li><a href="#">Item Three</a></li>
+</ul>
+<span class="clear_float"></span>
+
+<p>Floating two menus side by side - remember to clear a float to return to normal flow.</p>
+
+</body>
+</html>
