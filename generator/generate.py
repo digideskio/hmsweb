@@ -1,5 +1,14 @@
 #!/usr/bin/env python
+""" Very quick script to combine elements of the site together
 
+	templates/
+		contains templates for the header and footer
+	pages/	
+		contains the content of each page
+	site/
+		the target into which the site is created
+
+"""
 
 import os
 

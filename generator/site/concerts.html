@@ -1,14 +1,22 @@
-<html>
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html 
+     PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 
+<html  xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head>
+	<title>Haslemere Musical Society</title>
+
+	<script src="lightbox/js/jquery-1.7.2.min.js"></script>
+	<script src="lightbox/js/lightbox.js"></script>	
+
 	<link rel="stylesheet" type="text/css" href="css/style.css" />
 	<link rel="stylesheet" type="text/css" href="css/layout.css" />
 	<link rel="stylesheet" type="text/css" href="css/widgets.css" />
 	<link rel="stylesheet" type="text/css" href="css/hms.css" />
-<!--	<link rel="stylesheet" type="text/css" href="colours.css" />  -->
-	<title>Haslemere Musical Society</title>
-	<meta http-equiv="Content-Type" content="text/html; charset=windows-1252"/>
-	<meta http-equiv="Content-Language" content="en-us"/>
+	<link rel="stylesheet" type="text/css" href="lightbox/css/lightbox.css" />
+
+
 	<meta name="keywords" content="Haslemere, Musical society"/>
 	<meta name="description" content="Musical society with both choir and orchestra"/>
 </head>
@@ -16,135 +24,254 @@
 <body>
 	<div id="maincontainer">
 		<div id="banner">
-			<div id="nav_bar">
-				<ul id="nav_menu" class="menu">
-					<li><a href="index.html">Home</a></li>
-					<li><a href="about.html">About Us</a></li>
-					<li><a href="join.html">Join Us</a></li></a></li>
-					<li><a href="support.html">Support Us</a></li>
-					<li><a href="concerts.html">Concerts</a></li>
-					<li><a href="news.html">News</a></li>
-					<li><a href="members.html">Members</a></li>
-				</ul>
-				<ul id="social" class="menu">
-					<li><a href="#">F</a></li>
-					<li><a href="#">T</a></li>
-				</ul>
-			</div>
+			<h1>Haslemere Musical Society</h1>
+			<h2>Symphony Orchestra and Chorus</h2>
+			<img src="images/logo_white.png" />
 		</div>
-		<div id="content">
-<p>The Society performs three concerts with the Orchestra and Chorus every year in the Haslemere
-Hall.  An additional orchestral concert is held in St Christopher's Church, Weyhill,  often
-featuring a soloist from within the orchestra.</p>
+		<div id="nav_bar">
+			<ul id="nav_menu" class="menu">
+				<li><a href="index.html">Home</a></li>
+				<li><a href="about.html">About Us</a>
+					<ul>
+						<li><a href="about.html#">Society</a></li>
+						<li><a href="about.html#musical_director">Musical Director</a></li>
+						<li><a href="about.html#orchestra_leader">Orchestra leader</a></li>
+						<li><a href="about.html#chorus_master">Chorus master</a></li>
+						<li><a href="about.html#rehearsal_pianist">Rehearsal Pianist</a></li>
+					</ul>
+				</li>
+				<li><a href="join.html">Join Us</a>
+					<ul>
+						<li><a href="join.html#welcome">Welcome</a></li>
+						<li><a href="join.html#summer_sessions">Summer Sessions</a></li>
+						<li><a href="join.html#come_and_sing">Come and Sing</a></li>
+					</ul>
+				</li>
+				<li><a href="support.html">Support Us</a>
+					<ul>
+						<li><a href="support.html#shopping">Shop Online</a></li>
+						<li><a href="support.html#gift_aid">Gift Aid</a></li>
+						<li><a href="support.html#patron">Become a Patron</a></li>
+						<li><a href="support.html#friend">Become a Friend</a></li>
+						<li><a href="support.html#sponsor">Sponsor</a></li>
+					</ul>
+				</li>
+				<li><a href="concerts.html">Concerts</a>
+					<ul>
+						<li><a href="concerts.html#latest_concerts">Latest Concert</a></li>
+						<li><a href="concerts.html#tickets">Tickets</a></li>
+						<li><a href="archive.html">Archive</a></li>
+					</ul>
+				</li>
+				<li><a href="contact.html">Contact Us</a></li>
+				<li><a href="members.html">Members</a></li>
+			</ul>
+			<span class="clear_float"></span>
+		</div>
+<div class="content">
+
+<h2>Concerts</h2>
+
+<p>The Society performs three concerts with the Orchestra and Chorus every year
+in the Haslemere Hall.  An additional orchestral concert is held in St
+Christopher's Church, Weyhill, often featuring a soloist from within the
+orchestra.</p>
 
 <p>Tickets are available from Society members, the Haslemere Hall Box Office or
-<a href="">online</a>.</p>
+<a href="http://www.intelligent-tickets.com/index.php?th=hh">online</a>.</p>
 
-<h1>Concerts</h1>
+<div class="performance">
 
-<span class="performance">
-
-	<span class="decor">
+	<div class="decor">
 		<span class="perf_img">
-			<img src="images/clarinet_clipart.png" />
+			<img src="images/choir_1.png" />
 		</span>
-		<br/>
-		<span class="perf_button">
-			<a class="link_button" href="#">Buy Tickets</a>
-		</span>
-	</span>
+	</div> <!-- decor -->
 
-	<span class="details">
-		<h2>Orchestral Concert 2012</h2>
+	<div class="details">
+		<a id="latest_concert"></a>
+		<h3>Choral Concert</h3>
 
-		<span class="date">Saturday 13<super>th</super> October, 19:30</span>
-		<span class="location">St Christopher's Church, Weyhill, GU27 1DD (<a href="#">venue</a>)</span>
+		<span class="date">Saturday 4<super>th</super> May 2013, 19:30</span>
+		<span class="location">Haslemere Hall (<a href="http://www.haslemerehall.co.uk/" target="_blank">venue</a>)</span>
 		<span class="tickets">
-			Tickets: &pound;12.50</br>
+			Tickets: &pound;8.00 - &pound;15.00</br>
 			Under 18: Half price
-		</span>
+		</span> <!--  -->
 
 		<!-- performance  works -->
+		<table class="works">
+			<tr>
+				<td class="work_composer">Rossini:</td>
+				<td class="work_title">Overture: Il Barbiere di Siviglia</td>
+			</tr>
+			<tr>
+				<td class="work_composer">Rossini:</td>
+				<td class="work_title">Villagers' Chorus: Guillaume Tell</td>
+			</tr>
+			<tr>
+				<td class="work_composer">Donizetti:</td>
+				<td class="work_title">Chorus of Wedding Guests: Lucia di Lammermoor</td>
+			</tr>
+			<tr>
+				<td class="work_composer">Gounod:</td>
+				<td class="work_title">Ballet Music: Faust</td>
+			</tr>
+			<tr>
+				<td class="work_composer">Verdi:</td>
+				<td class="work_title">Anvil Chorus</td>
+			</tr>
+			<tr>
+				<td class="work_composer">Mascagni:</td>
+				<td class="work_title">Intermezzo and Easter Hymn: Cavalleria Rusticana </td>
+			</tr>
+			<tr>
+				<td class="work_composer">Puccini:</td>
+				<td class="work_title">Intermezzo: Manon Lescaut </td>
+			</tr>
+			<tr>
+				<td class="work_composer">Wagner:</td>
+				<td class="work_title">Pilgrim's Chorus (Act I) and March (Act II): Tannh&#228;user</td>
+			</tr>
+			<tr>
+				<td class="work_composer">Wagner:</td>
+				<td class="work_title">Prelude to Act III and Bridal Chorus: Lohengrin</td>
+			</tr>
+			<tr>
+				<td class="work_composer">Wagner:</td>
+				<td class="work_title">Procession and Chorale: Act III: Die Meistersinger von N&#252;rnberg</td>
+			</tr>
+		</table>
+
+		<!-- performers -->
 		<table class="performers">
 			<tr>
-				<td class="performer_label">Soloist:</td>
-				<td class="performer_value">Helen Owlett (Clarinet)</td>
+				<td class="performer_label">Conductor</td>
+				<td class="performer_value"><a href="about.html#musical_director">James Ross</a></td>
 			</tr>
 		</table>
+		<!-- performers -->
 
-		<!-- performance  works -->
-		<table class="works">
-			<tr>
-				<td class="work_composer">Mozart:</td>
-				<td class="work_title">Overture Don Giovanni</td>
-			</tr>
-			<tr>
-				<td class="work_composer">Delius:</td>
-				<td class="work_title">A Song before sunrise</td>
-			</tr>
-			<tr>	
-				<td class="work_composer">Weber:</td>
-				<td class="work_title">Clarinet Concertino (Helen Owlett, Clarinet)</td>
-			</tr>
-			<tr>
-				<td class="work_composer">Finzi:</td>
-				<td class="work_title">Five Bagatelles (Helen Owlett, Clarinet)</td>
-			</tr>
-			<tr>
-				<td class="work_composer">Schubert:</td>
-				<td class="work_title">Symphony No 6</td>
-			</tr>
-		</table>
-		<!-- performance details -->
-	</span>
-
-	<span class="clear_float"></span>
-</span>
-
-
-<span class="performance">
-
-	<span class="decor">
-		<span class="perf_img">
-			<img src="images/cellist.png" />
-		</span>
-		<br/>
 		<span class="perf_button">
-			<a class="link_button" href="#">Buy Tickets</a>
-		</span>
-	</span>
+			<a class="link_button" href="http://www.intelligent-tickets.com/index.php?th=hh" target="_blank">Buy Tickets</a>
+		</span> <!--  -->
 
-	<span class="details">
-		<h2>December Concert 2012</h2>
-
-		<span class="date">Saturday 13<super>th</super> December, 19:30</span>
-		<span class="location">Haselmere Hall (<a href="#">venue</a>)</span>
-		<span class="tickets">
-			Tickets: &pound;12.50</br>
-			Under 18: Half price
-		</span>
-
-		<!-- performance  works -->
-		<table class="works">
-			<tr>
-				<td class="work_composer">Beethoven:</td>
-				<td class="work_title">Symphony No. 6</td>
-			</tr>
-			<tr>
-				<td class="work_composer">Handel:</td>
-				<td class="work_title">Messiah</td>
-			</tr>
-		</table>
-	</span>
+	</div> <!-- details -->
 
 	<span class="clear_float"></span>
-</span>
+</div> <!-- performance -->
 
-		<!-- End Content -->
-		</div>
+
+<div class="content_full_width">
+	<a id="tickets"></a>
+	<h2>Tickets</h2>
+
+	<p>Tickets for all of our events are available online and in person from the
+	<a href="www.haslemerehall.co.uk" target="_blank">Haslemere Hall Box Office (www.haslemerehall.co.uk)</a>
+	or from Society members.</p>
+</div>
+
+
+<div class="img_col_rhs">
+	<img src="images/violinist.png" />
+</div>
+
+<div class="content_col_lhs">
+	<h3>Summer sessions and other events 2013</h3>
+
+	<p>In addition to the concert season the Society holds a series of
+	sight-reading sessions during June. We invite different guest conductors who
+	bring various pieces for us to rehearse, concluding with a mini performance
+	towards the end of the evening.</p>
+
+	<p>The Society welcomes musicians and singers who are not currently members
+	of the Society. Guests are welcome to come and listen, for free.</p> 
+
+	<p>The sessions take place each Monday in June from 7:30pm.
+	<a href="join.html#summer_sessions">More&nbsp;details</a></p>
+</div>
+
+
+<div class="clear_float"></div>
+
+<div class="content_full_width">
+	<h3>2012-2013 Season</h3>
+
+	<table>
+		<thead>
+		<tr><th>Date/Location</th><th>Performers</th><th>Works</th><th>Info</th></tr>
+		</thead>
+		<tbody>
+		<tr>
+			<td>8<sup>th</sup>&nbsp;December<br/>
+				Haslemere Hall</td>
+			<td>Orchestra and Chorus<br/>
+				Conductor: James Ross<br/>
+				Soprano: Helen May<br/>
+				Tenor: Peter Mitchell</td>
+			<td>Handel: Messiah (excerpts)<br/>
+				Beethoven: Symphony No.6 Pastoral</td>
+			<td><a href="images/flyers/large/concert_2012_12_08.png" rel="lightbox">Flyer</a></td>
+		</tr>
+		<tr>
+			<td>16<sup>th</sup>&nbsp;February<br/>
+				St Christopher's Church</td>
+			<td>Come and Sing<br/>
+				Conductor: Christopher Hann<br/>
+				Organist: Clive Osgood</td>
+			<td>Fauré: Requiem</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>2<sup>nd</sup>&nbsp;March<br/>
+				Haslemere Hall</td>
+			<td>Orchestra and Chorus<br/>
+				Conductor: James Ross<br/>
+				Soprano: Sara Wallander-Ross<br/>
+				Mezzo Soprano: Cathy Bell<br/>
+				Tenor: Arthur Swan<br/>
+				Baritone: Jon Stainsby</td>
+			<td>Mendelssohn: Elijah</td>
+			<td><a href="images/flyers/large/concert_2013_03_02.png" rel="lightbox">Flyer</a><br/>
+				<a href="review_2013_03_02.html">Review</a></td>
+		</tr>
+		<tr>
+			<td>4<sup>th</sup>&nbsp;May<br/>
+				Haslemere Hall</td>
+			<td>Orchestra and Chorus<br/>
+				Conductor: James Ross</td>
+			<td>Rossini: Overture: Il Barbiere di Siviglia<br/>
+				Rossini: Villagers' Chorus: Guillaume Tell<br/>
+				Donizetti: Chorus of Wedding Guests: Lucia di Lammermoor<br/>
+				Gounod: Ballet Music: Faust<br/>
+				Verdi: Anvil Chorus<br/>
+				Mascagni: Intermezzo and Easter Hymn: Cavalleria Rusticana<br/>
+				Puccini: Intermezzo: Manon Lescaut<br/>
+				Wagner: Pilgrim's Chorus (Act I) and March (Act II): Tannh&#228user<br/>
+				Wagner: Prelude to Act III and Bridal Chorus: Lohengrin<br/>
+				Wagner: Procession and Chorale: Act III: Die Meistersinger von N&#252;rnberg</td>
+			<td></td>
+		</tr>
+		</tbody>
+	</table>
+
+
+	<h3>Previous Season's Concerts</h3>
+
+	<p>Visit the <a href="archive.html">concert archive</a> to see the
+	programmes and reviews from previous seasons.</p>
+
+</div>
+
+
+
+</div> <!-- End Content -->
 		<!-- Footer -->
 		<div id="footer">
-			<span id="copyright">&copy; Haselmere Musical Society 2013</span>
+			<span id="copyright">&copy; Haslemere Musical Society 2013<br/>
+			Registered Charity No. 262696
+			</span>
+
 			<span id="webmaster">Webmaster:
 				<a href="mailto:se_bw@hotmail.co.uk?subject=Haslemere Musical Society">Seb Welford</a>
 				(I sing Bass in the choir)

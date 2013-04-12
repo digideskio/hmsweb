@@ -4,16 +4,28 @@ body {
 	font-family: verdana, sans-serif;
 	font-size: 0.9em;
 }
-p {
+p, dl {
 	font-size: 0.9em;
 	color: #101010;
 }
+a {
+	text-decoration: none;
+	color: #336699;
+}
+a:hover {
+	text-decoration: underline;
+	color: #336699;
+}
+
+b {
+	color: #333;
+}
+
 h1, h2, h3 {
 	font-family: helvetica, arial, sans-serif;
 	color: #336699;
 }
 h1 {
-	clear: both;
 	margin: 0.67em 0em;
 	font-size: 1.4em;
 }
@@ -23,7 +35,19 @@ h2 {
 }
 h3 {
 	margin: 0.5em 0em 0.02em 0em;
+	font-size: 1.2em;
+}
+h4 {
+	margin: 0.5em 0em 0.02em 0em;
 	font-size: 1.05em;
+}
+h1 a, h2 a, h3 a {
+	text-decoration: none;
+	font-style: normal;
+	color: #336699;
+}
+h1 a:hover, h2 a:hover, h3 a:hover {
+	color: #005599;
 }
 .lh_inline {
 	float: left;
@@ -43,6 +67,7 @@ table th, td{
 table {
 	color: #003366;
 	border-collapse: collapse;
+	margin-bottom: 1em;
 }
 th {
 	color: white;
@@ -51,6 +76,7 @@ th {
 }
 td {
 	padding: 0.1em 1em;
+	vertical-align: top;
 }
 
 #footer {
@@ -60,5 +86,17 @@ td {
 #footer a {
 	text-decoration: none;
 	color: #006699;
-	font-weight: bold;
+	font-weight: normal;
+}
+
+.clear_both {
+	clear: both;
+}
+
+.image_label {
+	margin: 0em;
+	display: block;
+	font-size: 0.5em;
+	text-align: center;
+	width: 100%;
 }

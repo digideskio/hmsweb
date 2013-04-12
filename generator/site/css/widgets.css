@@ -1,7 +1,7 @@
 
 /* Link Button */
 .link_button {
-	border: 1px solid black;
+	border: 1px solid #333;
 	padding: 0.35em 2.0em;
 	font-size: 0.9em;
 	font-weight: normal;
@@ -14,8 +14,8 @@
 /* Event Promotion */
 .event_promo {
 	display: block;
-	border: 1px solid #336699;
-	border-width: 1px 0px 1px 0px;
+	border: none;
+	margin: 0.5em 0.25em;
 }
 
 .event_promo h2 {
@@ -28,16 +28,23 @@
 	font-size: 1em;
 }
 
+.event_promo .details .performers {
+	font-size: 1.2em;
+}
+
 .event_promo .works {
 	display: block;
 }
 
 .event_promo .works dt {
+	font-weight: bold;
 	float: left;
 	width: 8em;
 }
 
 .event_promo .works dd {
+	margin-left: 8em;
+	margin-bottom: 0.2em;
 	float: clear;
 	font-style: italic;
 }
@@ -64,7 +71,6 @@
 	float: left;
 }
 
-.performance .decor .perf_button,
 .performance .decor .perf_img {
 	display: block;
 	text-align: center;
@@ -124,32 +130,83 @@
 	clear: both;
 }
 
-.menu {
-	margin:  0px 0px;
-	padding: 0px 0px;
-	overflow: auto;
+/* Menu CSS */
+.menu, .menu ul {
+	padding: 0em;
+	margin: 0em;
+	list-style: none;
+	background-color: #ddd;
+	border-width: 0px 0px 1px 0px;
+	border-color : #6688ff;
+	border-style: solid;
 }
+.menu ul {
+	border-width: 1px 0px 1px 0px;
+}
+
 .menu li {
 	float: left;
-	list-style-type: none;
-	margin:  0em 0.1em;
+	border-width: 0px 1px 0px 0px;
+	border-color : #336699;
+	border-style: solid;
 }
-.menu li a {
+.menu a {
+	color: #224488;
 	display: block;
-	padding:  0.35em 0.6em;
-	width: 6em;
-	text-align: center;
-	color: #EEEEEE;
+	background-color: #ddd;
 	font-size: 0.9em;
-	font-family: helvetica, arial, sans-serif;
+	margin: 0em;
+	padding: 0.1em 0.8em;
+}
+
+.menu, .menu ul, .menu a {
+	height: 1.45em;
+}
+
+.menu li ul {
+	position: absolute;
+	left: -999em;
+}
+
+.menu li ul,
+.menu li ul li,
+.menu li ul li a  {
+	width: 12em;
+	background-color: #f0f0f0;
+}
+
+.menu li:hover ul, .menu li.sfhover ul {
+	left: auto;
+}
+
+.menu a:hover {
+	background-color: #99bbdd;
 	text-decoration: none;
+	color: #003366;
 }
 
-#social li a {
-	width: 2em;
+.menu ul li a:hover {
+	background-color: #99bbdd;
+	padding-left: 7px;
+	border-width: 0px 0px 0px 3px;
+	border-style: solid;
+	border-color: #88bbdd;
 }
 
-.menu li, .link_button {
+.menu ul {
+	-webkit-border-radius: 30px;
+	-moz-border-radius: 30px;
+	border-radius: 30px;
+	background-color: red;
+}
+.menu {
+	border: 0em;
+}
+.menu ul {
+	border: 1px;
+}
+
+.link_button {
 	background: #003366; /* Old browsers */
 	/* FF3.6+ */
 	background: -moz-linear-gradient(top, #003366 0%, #336699 50%, #336699 51%, #003366 100%);
@@ -167,22 +224,22 @@
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#003366', endColorstr='#003366',GradientType=0 );
 }
 
-.menu li:hover,
-.menu li:hover a,
 .link_button:hover {
+	color: #eee;
+	text-decoration: none;
 	background: #0650AA; /* Old browsers */
 	/* FF3.6+ */
-	background: -moz-linear-gradient(top, #0650AA 0%, #4477aa 50%, #4477aa 51%, #0650AA 100%);
+	background: -moz-linear-gradient(top, #0650AA 0%, #336699 50%, #336699 51%, #0650AA 100%);
 	/* Chrome,Safari4+ */
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#0650AA), color-stop(50%,#4477aa), color-stop(51%,#4477aa), color-stop(100%,#0650AA));
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#0650AA), color-stop(50%,#336699), color-stop(51%,#336699), color-stop(100%,#0650AA));
 	/* Chrome10+,Safari5.1+ */
-	background: -webkit-linear-gradient(top, #0650AA 0%,#4477aa 50%,#4477aa 51%,#0650AA 100%);
+	background: -webkit-linear-gradient(top, #0650AA 0%,#336699 50%,#336699 51%,#0650AA 100%);
 	/* Opera 11.10+ */
-	background: -o-linear-gradient(top, #0650AA 0%,#4477aa 50%,#4477aa 51%,#0650AA 100%);
+	background: -o-linear-gradient(top, #0650AA 0%,#336699 50%,#336699 51%,#0650AA 100%);
 	/* IE10+ */
-	background: -ms-linear-gradient(top, #0650AA 0%,#4477aa 50%,#4477aa 51%,#0650AA 100%);
+	background: -ms-linear-gradient(top, #0650AA 0%,#336699 50%,#336699 51%,#0650AA 100%);
 	/* W3C */
-	background: linear-gradient(to bottom, #0650AA 0%,#4477aa 50%,#4477aa 51%,#0650AA 100%);
+	background: linear-gradient(to bottom, #0650AA 0%,#336699 50%,#336699 51%,#0650AA 100%);
 	/* IE6-9 */
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0650AA', endColorstr='#0650AA',GradientType=0 );
 }

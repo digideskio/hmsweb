@@ -1,0 +1,38 @@
+/* Menu CSS */
+
+#nav, #nav ul {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+
+#nav a {
+	display: block;
+	width: 6em;
+	background-color: #ddd;
+	padding: 0.2em 0.4em;
+}
+
+#nav a:hover {
+	background-color: #ccc;
+}
+
+#nav li {
+	float: left;
+	width: 6em;
+}
+
+#nav li ul {
+	position: absolute;
+	left: -999em;
+}
+
+#nav li ul, #nav li ul li, #nav li ul li a  {
+	width: 12em;
+}
+
+#nav li:hover ul, #nav li.sfhover ul {
+	left: auto;
+}
+
+
