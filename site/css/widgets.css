@@ -1,4 +1,3 @@
-
 /* Link Button */
 .link_button {
 	border: 1px solid #333;
@@ -24,12 +23,10 @@
 
 .event_promo .details {
 	color: #336699;
-	font-family: helvetica, arial, sans-serif;
-	font-size: 1em;
 }
 
 .event_promo .details .performers {
-	font-size: 1.2em;
+	font-size: 1.1em;
 }
 
 .event_promo .works {

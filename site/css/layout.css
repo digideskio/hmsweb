@@ -25,6 +25,26 @@ body {
 	height: 140px;
 }
 
+/* Social Media */
+#social_media {
+	top: 2px;
+	left: 600px;
+	width: 240px;
+	height: 2em;
+	position: absolute;
+}
+#social_media div#twitter {
+	position: absolute;
+    top: 0px;
+    left: 0px;
+}
+#social_media div#facebook {
+	position: absolute;
+    top: 0px;
+    left: 145px;
+}
+
+
 /* Main content */
 .img_col, #lhs {
 	clear: both;
