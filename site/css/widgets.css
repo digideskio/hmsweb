@@ -129,6 +129,7 @@
 
 /* Menu CSS */
 .menu, .menu ul {
+	font-size: 14px;
 	padding: 0em;
 	margin: 0em;
 	list-style: none;

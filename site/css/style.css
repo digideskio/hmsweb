@@ -4,7 +4,7 @@ body {
 	font-family: verdana, sans-serif;
 	font-size: 0.9em;
 }
-p, dl {
+p, dl, ul, ol {
 	font-size: 0.9em;
 	color: #101010;
 }
