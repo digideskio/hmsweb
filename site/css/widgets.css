@@ -52,6 +52,13 @@
 	float: right;
 }
 
+.event_promo .works.special_performers dt {
+	width: 13em;
+}
+
+.event_promo .works.special_performers dd {
+	margin-left: 13em;
+}
 
 /* Performance */
 .performance img {
@@ -103,6 +110,10 @@
 .performance .details td {
 	padding: 0.2em 1.4em 0.2em 0em;
 	font-size: 0.85em;
+}
+
+.performance .details p {
+	width: 40em;
 }
 
 .work_composer,
