@@ -84,9 +84,14 @@ body {
 	width: 96%;
 }
 
-.img_col_rhs img,
-.img_col img {
-	margin-top: 2.2em;
+#content_osgood div.img_col_rhs img  {
+	width: 171px;
+	height: 225px;
+}
+img.sponsors {
+	width: 156px;
+	height: 76px;
+	padding-bottom: 1em;
 }
 
 /* Page 1 specialisms */
@@ -122,3 +127,8 @@ body {
 table {
 	margin: 1em 0em 2em 0em;
 }
+
+.archive_date { width: 10.5em; }
+.archive_performers { width: 16em; }
+.archive_works { }
+.archive_info { width: 6em; }
