@@ -4,7 +4,7 @@
 	padding: 0.35em 2.0em;
 	font-size: 0.9em;
 	font-weight: normal;
-	font-family: helvetica, arial, sans-serif;
+	font-family: arial, sans-serif;
 	text-decoration: None;
 	color: #EEEEEE;
 }
@@ -66,6 +66,7 @@
 
 /* Performance */
 .performance img {
+	margin-top: 0.6em;
 	width: 200px;
 }
 
@@ -89,10 +90,11 @@
 	color: #003366;
 	margin-left: 1em;
 	display: block;
-	font-family: helvetica, arial, sans-serif;
+	font-family: arial, sans-serif;
 }
 
-.performance .details h2 {
+.performance .details h2,
+.performance .details h3 {
 	margin-top: 0em;
 }
 
