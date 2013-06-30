@@ -51,13 +51,7 @@ body {
 }
 
 #mission_statement {
-	position: absolute;
-	left: 28.6em;
-	top: 11.1em;
-	color:  #f0f0f0;
-	font-family: arial, sans-serif;
-	font-style: italic;
-	font-size: 1.3em;
+	display: none;
 }
 
 #next_performance {
