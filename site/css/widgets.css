@@ -65,27 +65,32 @@
 }
 
 /* Performance */
-.performance img {
+.performance img,
+.come_and_sing_event img {
 	margin-top: 0.6em;
 	width: 200px;
 }
 
-.performance {
+.performance,
+.come_and_sing_event {
 	display: block;
 	margin-bottom: 0.6em;
 }
 
-.performance .decor {
+.performance .decor,
+.come_and_sing_event .decor {
 	display: block;
 	float: left;
 }
 
-.performance .decor .perf_img {
+.performance .decor .perf_img,
+.come_and_sing_event .decor .perf_img {
 	display: block;
 	text-align: center;
 }
 
-.performance .details {
+.performance .details,
+.come_and_sing_event .details {
 	float: left;
 	color: #003366;
 	margin-left: 1em;
@@ -94,31 +99,44 @@
 }
 
 .performance .details h2,
-.performance .details h3 {
+.performance .details h3,
+.come_and_sing_event .details h2,
+.come_and_sing_event .details h3 {
 	margin-top: 0em;
 }
+.come_and_sing_event .details h3 { font-size: 0.9em;
+}
 
-.performance .details span {
+.performance .details span,
+.come_and_sing_event .details span {
 	display: block;
 	margin: 0.6em 0em;
 	font-size: 0.9em;
+}
+.performance .details span,
+.come_and_sing_event .details .date,
+.come_and_sing_event .details .flyer {
 	font-weight: bold;
 }
 
 .performance .details td,
-.performance .details table {
+.performance .details table,
+.come_and_sing_event .details td,
+.come_and_sing_event .details table {
 	margin: 1em 0em;
 	border: 0px none #333333; 
 	border-collapse: collapse;
 	padding: 0em;
 }
 
-.performance .details td {
+.performance .details td,
+.come_and_sing_event .details td {
 	padding: 0.2em 1.4em 0.2em 0em;
 	font-size: 0.85em;
 }
 
-.performance .details p {
+.performance .details p,
+.come_and_sing_event .details p {
 	width: 40em;
 }
 
