@@ -14,11 +14,15 @@
 .event_promo {
 	display: block;
 	border: none;
-	margin: 0.5em 0.25em;
+	margin: 1.5em 0.25em;
 }
 
 .event_promo h2 {
 	font-size: 1.2em;
+}
+
+.event_promo span {
+	font-size: 0.9em;
 }
 
 .event_promo .details {
@@ -62,6 +66,10 @@
 
 .event_promo .works.special_performers dd {
 	margin-left: 13em;
+}
+
+.other_events {
+	font-size: 1.1em;
 }
 
 /* Performance */
