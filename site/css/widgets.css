@@ -149,12 +149,23 @@
 }
 
 .work_composer,
+.conductor_label,
 .performer_label {
 	font-weight: bold;
+	font-size: 1em;
+	color: #336699;
 }
 
 .work_title {
 	font-style: italic;
+}
+
+.concert_heading {
+	font-size: 1em;
+}
+
+.performance_notes {
+	font-size: 0.9em;
 }
 
 /* */
