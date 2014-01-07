@@ -180,26 +180,12 @@
 		<th>Link</th>
 		<th>Website</th>
 	</thead>
+{% for item in external_links %}
 	<tr>
-		<td><a href="http://www.choraline.com/">Choraline</a></td>
-		<td>Choraline practice recordings</td>
+		<td><a href="{{item.link}}">{{item.label}}</a></td>
+		<td>{{item.description}}</td>
 	</tr>
-	<tr>
-		<td><a href="http://www.cyberbass.com/">Cyberbass</a></td>
-		<td>Learning aids for choral singers</td>
-	</tr>
-	<tr>
-		<td><a href="http://www.haslemerehall.co.uk/">Haslemere Hall</a></td>
-		<td>HMS location for ticket sales, practice and performances</td>
-	</tr>
-	<tr>
-		<td><a href="http://www.lamnet.co.uk/">LAMNET</a></td>
-		<td>The Local Amateur Music Network - the UK's only free searchable database of classical musicians and groups</td>
-	</tr>
-	<tr>
-		<td><a href="http://www.makingmusic.org.uk/MM/home.aspx">Making Music</a></td>
-		<td>National Federation of Music Societies</td>
-	</tr>
+{% endfor %}
 </table>
 
 </div> <!-- End Content -->
