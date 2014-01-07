@@ -40,6 +40,7 @@ def paraText(eval_ctx, value):
 	# Get correct coding before making replacements for html entities
 	result = result.encode("utf-8")
 	result = result.replace("£", "&pound;")
+	result = result.replace(u'\xa0', " ")
 	result = EMAILS.sub(r'<a href="mailto:\1">\1</a>', result)
 
 	if eval_ctx.autoescape:

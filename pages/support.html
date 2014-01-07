@@ -72,14 +72,40 @@
 
 	{{membership.friend.text|paraText}}
 
+	<a class="lightbox" href="#friends_list">Current Friends</a>
+	<div id="friends_list" class="hidden">
+		<h3>{{membership.friend.people_title}}</h3>
+		<ul>
+		{% for friend in  membership.friend.people %}
+			<li>{{friend}}</li>
+		{% endfor %}
+		</ul>
+	</div>
+
 	<a id="patron"></a>
 	<h3>{{membership.patron.title}}</h3>
 
 	{{membership.patron.text|paraText}}
 
+	<a class="lightbox" href="#patrons_list">Current Patrons</a>
+	<div id="patrons_list" class="hidden">
+		<h3>{{membership.patron.people_title}}</h3>
+		<ul>
+		{% for friend in  membership.patron.people %}
+			<li>{{friend}}</li>
+		{% endfor %}
+		</ul>
+	</div>
+
 	{{membership.contact|paraText}}
+
 </div>
 
+<script type="text/javascript">
+	$(document).ready(function() {
+		$(".lightbox").fancybox();
+	});
+</script>
 <div class="img_col">
 	<img class="sponsors" src="images/logos/communityFoundation.png" />
 	<img class="sponsors" src="images/logos/keats.png" />

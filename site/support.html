@@ -7,14 +7,28 @@
 <head>
 	<title>Haslemere Musical Society</title>
 
-	<script src="lightbox/js/jquery-1.7.2.min.js"></script>
-	<script src="lightbox/js/lightbox.js"></script>	
-
 	<link rel="stylesheet" type="text/css" href="css/style.css" />
 	<link rel="stylesheet" type="text/css" href="css/layout.css" />
 	<link rel="stylesheet" type="text/css" href="css/widgets.css" />
 	<link rel="stylesheet" type="text/css" href="css/hms.css" />
-	<link rel="stylesheet" type="text/css" href="lightbox/css/lightbox.css" />
+
+	<!-- Add jQuery library -->
+	<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+
+	<!-- Add mousewheel plugin (this is optional) -->
+	<script type="text/javascript" src="fancybox/lib/jquery.mousewheel-3.0.6.pack.js"></script>
+
+	<!-- Add fancyBox -->
+	<link rel="stylesheet" href="fancybox/source/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen" />
+	<script type="text/javascript" src="fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+	<!-- Optionally add helpers - button, thumbnail and/or media -->
+	<link rel="stylesheet" href="fancybox/source/helpers/jquery.fancybox-buttons.css?v=1.0.5" type="text/css" media="screen" />
+	<script type="text/javascript" src="fancybox/source/helpers/jquery.fancybox-buttons.js?v=1.0.5"></script>
+	<script type="text/javascript" src="fancybox/source/helpers/jquery.fancybox-media.js?v=1.0.6"></script>
+
+	<link rel="stylesheet" href="fancybox/source/helpers/jquery.fancybox-thumbs.css?v=1.0.7" type="text/css" media="screen" />
+	<script type="text/javascript" src="fancybox/source/helpers/jquery.fancybox-thumbs.js?v=1.0.7"></script>
 
 
 	<meta name="keywords" content="Haslemere, Musical society"/>
@@ -176,15 +190,78 @@
 <p>Friends are kept in touch with our plans and activities through regular newsletters from the Secretary, who is a member of the choir.</p>
 <p>A Friends subscription is just &pound;20 per annum, and you will receive our newsletter and other relevant communications. We will also include your name in our concert programmes and on our website.</p>
 
+	<a class="lightbox" href="#friends_list">Current Friends</a>
+	<div id="friends_list" class="hidden">
+		<h3>Friends</h3>
+		<ul>
+					<li>Professor B. Allison</li>
+					<li>Dr &amp; Mrs D. Barrett</li>
+					<li>Mrs P. Hewetson</li>
+					<li>Dr A. Hunter</li>
+					<li>Mr &amp; Mrs J. Reynolds</li>
+					<li>Mr D. Shorrock</li>
+					<li>Mrs K. Siebert</li>
+					<li>Mrs P. Masterton</li>
+				</ul>
+	</div>
+
 	<a id="patron"></a>
 	<h3>Become a Patron</h3>
 
 	<p>We are especially grateful for annual donations from our Patrons.</p>
 <p>A Patron's subscription is a minimum of &pound;50 per annum. In addition to the benefits accruing to our Friends, we further show our appreciation by offering you a complimentary programme and an invitation to our post-concert parties and other social events. You will also receive a Patron's card and an invitation to attend rehearsals for all Society events.</p>
 
+	<a class="lightbox" href="#patrons_list">Current Patrons</a>
+	<div id="patrons_list" class="hidden">
+		<h3>Patrons</h3>
+		<ul>
+					<li>Mr &amp; Mrs M.F. Barnes</li>
+					<li>Mr M.H. Biddiscombe</li>
+					<li>Mr S.M. Brown</li>
+					<li>Mr L Burgess</li>
+					<li>Mrs C. Christian</li>
+					<li>Mr &amp; Mrs H. Donaldson</li>
+					<li>Mrs C.J. Eraut</li>
+					<li>Mrs S. Falk</li>
+					<li>Mr &amp; Mrs B. Farley</li>
+					<li>Mrs H. Farrer</li>
+					<li>Mrs R.M. Flower</li>
+					<li>Mrs B. Goulston</li>
+					<li>Mrs V. Hardwick</li>
+					<li>Mr P. Harrison</li>
+					<li>Mrs M. Hull</li>
+					<li>Mr &amp; Mrs J. Jackson</li>
+					<li>Mr B. Jeffcote</li>
+					<li>Mr J.W. Jeffrey MBE &amp; Mrs S. Jeffrey</li>
+					<li>Mrs M. Kirkman</li>
+					<li>Sir Anthony Laughton &amp; Lady Laughton</li>
+					<li>Mr J. McDonald</li>
+					<li>Ms T. McLeod</li>
+					<li>Mrs M.K. Musk</li>
+					<li>Mr A. Ramsden</li>
+					<li>Mr N.H. Rogers</li>
+					<li>Dr D.M. Samways</li>
+					<li>Mr &amp; Mrs C.M. Scholfield</li>
+					<li>Mr P. Sharpe</li>
+					<li>Mrs T. Slade</li>
+					<li>Mr D. Trout</li>
+					<li>Mr N.J.T. Tyrrell-Evans</li>
+					<li>Mr &amp; Mrs J. Wardell</li>
+					<li>Dr C. Warner</li>
+					<li>Mr D. White</li>
+					<li>Mrs C. Willis</li>
+				</ul>
+	</div>
+
 	<p>John Jackson, Chairman of HMS, would be delighted to hear from anyone who would like to support the Society as a Friend or Patron. For further information please ring 01428 712335 or email <a href="mailto:chairman@hmsoc.org.uk">chairman@hmsoc.org.uk</a></p>
+
 </div>
 
+<script type="text/javascript">
+	$(document).ready(function() {
+		$(".lightbox").fancybox();
+	});
+</script>
 <div class="img_col">
 	<img class="sponsors" src="images/logos/communityFoundation.png" />
 	<img class="sponsors" src="images/logos/keats.png" />

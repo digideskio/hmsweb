@@ -7,14 +7,28 @@
 <head>
 	<title>Haslemere Musical Society</title>
 
-	<script src="lightbox/js/jquery-1.7.2.min.js"></script>
-	<script src="lightbox/js/lightbox.js"></script>	
-
 	<link rel="stylesheet" type="text/css" href="css/style.css" />
 	<link rel="stylesheet" type="text/css" href="css/layout.css" />
 	<link rel="stylesheet" type="text/css" href="css/widgets.css" />
 	<link rel="stylesheet" type="text/css" href="css/hms.css" />
-	<link rel="stylesheet" type="text/css" href="lightbox/css/lightbox.css" />
+
+	<!-- Add jQuery library -->
+	<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+
+	<!-- Add mousewheel plugin (this is optional) -->
+	<script type="text/javascript" src="fancybox/lib/jquery.mousewheel-3.0.6.pack.js"></script>
+
+	<!-- Add fancyBox -->
+	<link rel="stylesheet" href="fancybox/source/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen" />
+	<script type="text/javascript" src="fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+	<!-- Optionally add helpers - button, thumbnail and/or media -->
+	<link rel="stylesheet" href="fancybox/source/helpers/jquery.fancybox-buttons.css?v=1.0.5" type="text/css" media="screen" />
+	<script type="text/javascript" src="fancybox/source/helpers/jquery.fancybox-buttons.js?v=1.0.5"></script>
+	<script type="text/javascript" src="fancybox/source/helpers/jquery.fancybox-media.js?v=1.0.6"></script>
+
+	<link rel="stylesheet" href="fancybox/source/helpers/jquery.fancybox-thumbs.css?v=1.0.7" type="text/css" media="screen" />
+	<script type="text/javascript" src="fancybox/source/helpers/jquery.fancybox-thumbs.js?v=1.0.7"></script>
 
 
 	<meta name="keywords" content="Haslemere, Musical society"/>
@@ -162,7 +176,7 @@
 			<td>Beethoven: <en>Symphony No 3 Eroica</em><br/>
 			Bach: <em>Cantata No 140: Wachet auf, ruft uns die Stimme</em> (first movement)<br/>
 			Vivaldi: Gloria</td>
-			<td><a href="images/flyers/large/concert_2013_12_07.png" rel="lightbox">Flyer</a><br/>
+			<td><a href="images/flyers/large/concert_2013_12_07.png" class="lightbox" >Flyer</a><br/>
 			</td>
 		</tr>
 		<tr>
@@ -237,7 +251,7 @@
 				Tenor: Arthur Swan<br/>
 				Baritone: Jon Stainsby</td>
 			<td>Mendelssohn: Elijah</td>
-			<td><a href="images/flyers/large/concert_2013_03_02.png" rel="lightbox">Flyer</a><br/>
+			<td><a href="images/flyers/large/concert_2013_03_02.png" class="lightbox" >Flyer</a><br/>
 				<a href="review_2013_03_02.html">Review</a></td>
 		</tr>
 		<tr>
@@ -258,7 +272,7 @@
 				Tenor: Peter Mitchell</td>
 			<td>Handel: Messiah (excerpts)<br/>
 				Beethoven: Symphony No 6 Pastoral</td>
-			<td><a href="images/flyers/large/concert_2012_12_08.png" rel="lightbox">Flyer</a></td>
+			<td><a href="images/flyers/large/concert_2012_12_08.png" class="lightbox" >Flyer</a></td>
 		</tr>
 		</tbody>
 	</table>
@@ -290,7 +304,7 @@
 				Massenet: Ballet Music from Le Cid<br/>
 				Falla: Danse Espagnole from La Vida Breve<br/>
 				Falla: Suite No 1 from The Three Cornered Hat</td>
-			<td><a href="images/flyers/large/concert_2012_05_05.png" rel="lightbox">Flyer</a></td>
+			<td><a href="images/flyers/large/concert_2012_05_05.png" class="lightbox" >Flyer</a></td>
 		</tr>
 		<tr>
 			<td>3<sup>rd</sup>&nbsp;March&nbsp;2012<br/>
@@ -301,7 +315,7 @@
 			<td>Elgar: The Music Makers<br/>
 				Sibelius: Symphony No 3<br/>
 				Mendelssohn: Hebrides Overture</td>
-			<td><a href="images/flyers/large/concert_2012_03_03.png" rel="lightbox">Flyer</a><br/>
+			<td><a href="images/flyers/large/concert_2012_03_03.png" class="lightbox" >Flyer</a><br/>
 				<a href="review_2012_03_03.html">Review</a></td>
 		</tr>
 		<tr>
@@ -322,9 +336,9 @@
 				St Christopher's Church</td>
 			<td>Orchestra<br/>
 				Conductor: James Ross<br/>
-				'Cello soloist: Anna Hunt</td>
+				Cello soloist: Anna Hunt</td>
 			<td>Beethoven: Coriolan Overture<br/>
-				Saint-saens: 'Cello Concerto No 1 in A minor<br/>
+				Saint-saens: Cello Concerto No 1 in A minor<br/>
 				Haydn: Symphony 104</td>
 			<td></td>
 		</tr>
@@ -371,7 +385,7 @@
 				Schubert: Symphony No 8 Unfinished<br/>
 				Brahms: German Requiem<br/>
 				Osgood: Festival Cantata</td>
-			<td><a href="images/flyers/large/concert_2011_03_05.png" rel="lightbox">Flyer</a><br/>
+			<td><a href="images/flyers/large/concert_2011_03_05.png" class="lightbox" >Flyer</a><br/>
 				<a href="review_2011_03_05.html">Review</a></td>
 		</tr>
 		<tr>
@@ -385,7 +399,7 @@
 				J S Bach: Christmas Oratorio (excerpts)<br/>
 				Beethoven: Overture "Egmont"<br/>
 				and Carols with audience participation</td>
-			<td><a href="images/flyers/large/concert_2010_12_04.png" rel="lightbox">Flyer</a><br/>
+			<td><a href="images/flyers/large/concert_2010_12_04.png" class="lightbox" >Flyer</a><br/>
 				<a href="review_2010_12_04.html">Review</a></td>
 		</tr>
 		</tbody>
@@ -431,7 +445,7 @@
 				Tenor: Stephen Brown<br/>
 				Baritone: Jon Stainsby</td>
 			<td>Haydn: The Creation</td>
-			<td><a href="images/flyers/large/concert_2010_03_06.png" rel="lightbox">Flyer</a><br/>
+			<td><a href="images/flyers/large/concert_2010_03_06.png" class="lightbox" >Flyer</a><br/>
 		</tr>
 		<tr>
 			<td>6<sup>th</sup>&nbsp;February&nbsp;2010<br/>
@@ -442,7 +456,7 @@
 			<td>Schubert: Overture, Rosamunde<br/>
 				Haydn: Cello Concerto<br/>
 				Beethoven: Symphony No 1</td>
-			<td><a href="images/flyers/large/concert_2010_02_06.png" rel="lightbox">Flyer</a><br/>
+			<td><a href="images/flyers/large/concert_2010_02_06.png" class="lightbox" >Flyer</a><br/>
 		</tr>
 		<tr>
 			<td>5<sup>th</sup>&nbsp;December&nbsp;2009<br/>
@@ -506,7 +520,7 @@
 				Soprano: Sara Jonsson<br/>
 				Baritone: Jon Stainsby</td>
 			<td>J S Bach: St John Passion</td>
-			<td><a href="images/flyers/large/concert_2009_03_28.png" rel="lightbox">Flyer</a><br/>
+			<td><a href="images/flyers/large/concert_2009_03_28.png" class="lightbox" >Flyer</a><br/>
 		</tr>
 		<tr>
 			<td>7<sup>th</sup>&nbsp;March&nbsp;2009<br/>
@@ -517,7 +531,7 @@
 			<td>Borodin: Overture, Prince Igor<br/>
 				Sibelius: Violin Concerto in D minor<br/>
 				Tchaikovsky: Symphony no 5 In E minor</td>
-			<td><a href="images/flyers/large/concert_2009_03_07.png" rel="lightbox">Flyer</a><br/>
+			<td><a href="images/flyers/large/concert_2009_03_07.png" class="lightbox" >Flyer</a><br/>
 		</tr>
 		<tr>
 			<td>7<sup>th</sup>&nbsp;February&nbsp;2009<br/>
@@ -592,9 +606,13 @@
 		</tr>
 		</tbody>
 	</table>
-
 </div>
 </div> <!-- End Content -->
+<script type="text/javascript">
+$(document).ready(function() {
+	$(".lightbox").fancybox();
+});
+</script>
 		<!-- Footer -->
 		<div id="footer">
 			<span id="copyright">&copy; Haslemere Musical Society 2013<br/>

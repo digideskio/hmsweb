@@ -11,7 +11,18 @@ membership:
                A Friends subscription is just £20 per annum, and you will receive our
                newsletter and other relevant communications. We will also include your
                name in our concert programmes and on our website."
-    
+
+        people_title: "Friends"
+        people:    
+             - Professor B. Allison
+             - Dr & Mrs D. Barrett
+             - Mrs P. Hewetson
+             - Dr A. Hunter
+             - Mr & Mrs J. Reynolds
+             - Mr D. Shorrock
+             - Mrs K. Siebert
+             - Mrs P. Masterton
+
     patron: 
         title: Become a Patron
         text:  "We are especially grateful for annual donations from our Patrons.
@@ -21,7 +32,45 @@ membership:
                by offering you a complimentary programme and an invitation to our
                post-concert parties and other social events. You will also receive a
                Patron's card and an invitation to attend rehearsals for all Society events."
-    
+
+        people_title: "Patrons"
+        people:
+             - Mr & Mrs M.F. Barnes
+             - Mr M.H. Biddiscombe
+             - Mr S.M. Brown
+             - Mr L Burgess
+             - Mrs C. Christian
+             - Mr & Mrs H. Donaldson
+             - Mrs C.J. Eraut
+             - Mrs S. Falk
+             - Mr & Mrs B. Farley
+             - Mrs H. Farrer
+             - Mrs R.M. Flower
+             - Mrs B. Goulston
+             - Mrs V. Hardwick
+             - Mr P. Harrison
+             - Mrs M. Hull
+             - Mr & Mrs J. Jackson
+             - Mr B. Jeffcote
+             - Mr J.W. Jeffrey MBE & Mrs S. Jeffrey
+             - Mrs M. Kirkman
+             - Sir Anthony Laughton & Lady Laughton
+             - Mr J. McDonald
+             - Ms T. McLeod
+             - Mrs M.K. Musk
+             - Mr A. Ramsden
+             - Mr N.H. Rogers
+             - Dr D.M. Samways
+             - Mr & Mrs C.M. Scholfield
+             - Mr P. Sharpe
+             - Mrs T. Slade
+             - Mr D. Trout
+             - Mr N.J.T. Tyrrell-Evans
+             - Mr & Mrs J. Wardell
+             - Dr C. Warner
+             - Mr D. White
+             - Mrs C. Willis
+
     contact:
         "John Jackson, Chairman of HMS, would be delighted to hear from anyone
         who would like to support the Society as a Friend or Patron. For further
