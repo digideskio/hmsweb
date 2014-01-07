@@ -9,7 +9,7 @@
 		the target into which the site is created
 
 """
-
+import glob
 import os
 
 def readTemplate(parentDir, templateDir, name):
@@ -22,34 +22,30 @@ def getPages(parentDir, pagesDir):
 	"""
 	"""
 	pages = {}
-	pagesDir = os.path.join(parentDir, pagesDir)
-	for page in os.listdir(pagesDir):
-
-		# Read the page	
-		pagePath = os.path.join(pagesDir, page)
-		with open(pagePath) as pageFile:
-			pages[page] = pageFile.read()
-
-	return pages
+	pagesDir = os.path.join(parentDir, pagesDir, "*.html")
+	return glob.glob(pagesDir)
 
 def generateSite(parentDir, templateDir, pagesDir, siteDir):
 	""" Generate the site
 	"""
-	# Common parts
-	header = readTemplate(parentDir, templateDir, 'header.html')
-	footer = readTemplate(parentDir, templateDir, 'footer.html')
+	from jinja2 import Environment, FileSystemLoader
+	loader = FileSystemLoader(['templates', 'pages'])
+	env = Environment(loader=loader)
 
-	# Pages
-	pages = getPages(parentDir, 'pages')
+	pages = getPages(parentDir, pagesDir)
 
-	for page, pageContent in pages.iteritems():
-		destFile = os.path.join(parentDir, siteDir, page)
+	for page in pages:
+		pageFile = os.path.basename(page)
+		template = env.get_template(pageFile)
+		pageContent = template.render()
 
-		with open(destFile, 'w') as fileOut:
-			fileOut.write(header)
-			fileOut.write(pageContent)
-			fileOut.write(footer)
-
+		try:
+			destFile = os.path.join(parentDir, siteDir, pageFile)
+			with open(destFile, 'w') as fileOut:
+				fileOut.write(pageContent)
+		except:
+			print "Error writing: %s" % (destFile,)
+			raise
 
 if __name__ == "__main__":
 
