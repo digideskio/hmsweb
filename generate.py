@@ -34,6 +34,7 @@ def paraText(eval_ctx, value):
 #	result = u'\n\n'.join(u'<p>%s</p>' % p.replace('\n', '<br>\n') for p in _paragraph_re.split(jinja2.escape(value)))
 
 	#value = jinja2.escape(value)
+	value = jinja2.escape(value)
 	paras = value.split("\n")
 	result = "<p>" + "</p>\n<p>".join(paras) + "</p>"
 
@@ -41,6 +42,8 @@ def paraText(eval_ctx, value):
 	result = result.encode("utf-8")
 	result = result.replace("£", "&pound;")
 	result = result.replace(u'\xa0', " ")
+	result = result.replace(u'\u2013', "-")
+	result = result.replace(u'\u2019', "'")
 	result = EMAILS.sub(r'<a href="mailto:\1">\1</a>', result)
 
 	if eval_ctx.autoescape:
@@ -95,8 +98,10 @@ def generateSite(parentDir, templateDir, pagesDir, contentDir, siteDir):
 			destFile = os.path.join(parentDir, siteDir, pageFile)
 			with open(destFile, 'w') as fileOut:
 				fileOut.write(pageContent)
-		except:
+		except Exception, exc:
 			print "Error writing: %s" % (destFile,)
+			print str(exc)
+			import pdb; pdb.set_trace()
 			raise
 
 if __name__ == "__main__":
