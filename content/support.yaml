@@ -1,0 +1,29 @@
+membership:
+
+    friend:
+        title: Become a Friend
+        text:  "HMS Friends are the vital core of an appreciative and discerning audience,
+               and are a sociable group of like-minded music lovers.
+    
+               Friends are kept in touch with our plans and activities through regular
+               newsletters from the Secretary, who is a member of the choir.
+    
+               A Friends subscription is just £20 per annum, and you will receive our
+               newsletter and other relevant communications. We will also include your
+               name in our concert programmes and on our website."
+    
+    patron: 
+        title: Become a Patron
+        text:  "We are especially grateful for annual donations from our Patrons.
+    
+               A Patron's subscription is a minimum of £50 per annum. In addition to
+               the benefits accruing to our Friends, we further show our appreciation
+               by offering you a complimentary programme and an invitation to our
+               post-concert parties and other social events. You will also receive a
+               Patron's card and an invitation to attend rehearsals for all Society events."
+    
+    contact:
+        "John Jackson, Chairman of HMS, would be delighted to hear from anyone
+        who would like to support the Society as a Friend or Patron. For further
+        information please ring 01428 712335 or email chairman@hmsoc.org.uk"
+

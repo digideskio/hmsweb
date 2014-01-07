@@ -161,17 +161,35 @@
 <h2>Member information</h2>
 
 <h3>Rehearsals</h3>
+	{% if rehearsals.exceptions %}
 	<ul>
-		<li>All rehearsals in the Haslemere Hall except: 18th March 2013 </li>
-		<li>Summer sessions: 3rd, 10th, 17th and 24th June 2013</li>
+		{% for exception in rehearsals.exceptions %}
+		<li>{{exception}}</li>
+		{% endfor %}
 	</ul>
+	{% endif %}
+	<p>{{rehearsals.location}}</p>
 
-	<p>	Rehearsals are in Haslemere Hall on Mondays (see below for dates) at 7.30pm
-		till about 10pm for both choir and orchestra.  We have a tea/coffee break
-		about half way through. There is normally a rehearsal during the afternoon
-		before each concert.  Occasionally the choir rehearses in the Methodist
-		church in Weyhill when Haslemere Hall is not available. The orchestra
-		also sometimes rehearses in St Christopher's Church, Weyhill.</p>
+{% if rehearsals.schedule %}
+<table>
+	<thead>
+		<th>Date</th>
+		<th>Movement</th>
+	</thead>
+{% for rehearsal in rehearsals.schedule %}
+	<tr>
+		<td>{{rehearsal.date}}</td>
+		<td>
+		<ul>
+		{% for movement in rehearsal.movement %}
+			<li>{{movement}}</li>
+		{% endfor %}
+		</ul>
+		</td>
+	</tr>
+{% endfor %}
+</table>
+{% endif %}
 
 <a id="links"></a>
 <h3>Links and Rehearsal Music</h3>

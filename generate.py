@@ -1,4 +1,6 @@
 #!/usr/bin/env python
+# coding: utf-8
+
 """ Very quick script to combine elements of the site together
 
 	templates/
@@ -12,7 +14,37 @@
 import glob
 import jinja2
 import os
+import re
 import yaml
+
+def construct_yaml_str(self, node):
+    # Override the default string handling function 
+    # to always return unicode objects
+    return self.construct_scalar(node)
+yaml.Loader.add_constructor(u'tag:yaml.org,2002:str', construct_yaml_str)
+yaml.SafeLoader.add_constructor(u'tag:yaml.org,2002:str', construct_yaml_str)
+
+
+EMAILS = re.compile(r'\b([A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4})\b', re.I)
+_paragraph_re = re.compile(r'(?:\r\n|\r|\n){2,}')
+
+@jinja2.evalcontextfilter
+def paraText(eval_ctx, value):
+#	result = value.replace("\xc2", "&pound;")
+#	result = u'\n\n'.join(u'<p>%s</p>' % p.replace('\n', '<br>\n') for p in _paragraph_re.split(jinja2.escape(value)))
+
+	#value = jinja2.escape(value)
+	paras = value.split("\n")
+	result = "<p>" + "</p>\n<p>".join(paras) + "</p>"
+
+	# Get correct coding before making replacements for html entities
+	result = result.encode("utf-8")
+	result = result.replace("£", "&pound;")
+	result = EMAILS.sub(r'<a href="mailto:\1">\1</a>', result)
+
+	if eval_ctx.autoescape:
+		result = jinja2.Markup(result)
+	return result
 
 def readTemplate(parentDir, templateDir, name):
 	path = os.path.join(parentDir, templateDir, name)
@@ -33,6 +65,9 @@ def generateSite(parentDir, templateDir, pagesDir, contentDir, siteDir):
 	loader = jinja2.FileSystemLoader(['templates', 'pages'])
 	env = jinja2.Environment(loader=loader)
 	env.trim_blocks = True
+	env.autoescape = True
+	env.filters['paraText'] = paraText
+
 
 	pages = getPages(parentDir, pagesDir)
 

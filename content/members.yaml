@@ -1,3 +1,56 @@
+rehearsals:
+
+    location:
+        "Rehearsals are in Haslemere Hall on Mondays (see below for dates) at 7.30pm
+        till about 10pm for both choir and orchestra.  We have a tea/coffee break
+        about half way through. There is normally a rehearsal during the afternoon
+        before each concert.  Occasionally the choir rehearses in the Methodist
+        church in Weyhill when Haslemere Hall is not available. The orchestra
+        also sometimes rehearses in St Christopher's Church, Weyhill."
+
+    exceptions:
+        - "All rehearsals in the Haslemere Hall except: 18th March 2013"
+        - "Summer sessions: 3rd, 10th, 17th and 24th June 2013"
+
+    schedule:
+      - date: Jan 6th
+        movement:
+            - Kyrie
+            - Sanctus
+      - date: Jan 13th
+        movement:
+            - Benedictus
+            - Sanctus (revision)
+      - date: Jan 20th
+        movement:
+            - Credo (to bar 174)
+            - Kyrie (revision)
+      - date: Jan 27th
+        movement:
+            - Credo (bar 177 - end))
+            - Benedictus (revision)
+      - date: Feb 3rd
+        movement:
+            - Gloria (to bar 105)
+            - Credo (whole movement - revision)
+      - date: Feb 10th
+        movement:
+            - Gloria (bar 120 - end)
+            - Gloria (whole movement)
+      - date: Feb 17th
+        movement:
+            - Credo
+            - Sanctus
+            - Benedictus
+      - date: Feb 24th
+        movement:
+            - Kyrie
+            - Gloria
+            - Agnus Dei
+      - date: Mar 3rd
+        movement:
+            - Run Programme
+
 external_links:
   - label: Choraline
     link: http://www.choraline.com/
@@ -10,7 +63,8 @@ external_links:
     description: HMS location for ticket sales, practice and performances
   - label: LAMNET
     link: http://www.lamnet.co.uk/
-    description: The Local Amateur Music Network - the UK's only free searchable database of classical musicians and groups
+    description: "The Local Amateur Music Network - the UK's only free searchable
+                 database of classical musicians and groups"
   - label: Making Music
     link: http://www.makingmusic.org.uk/MM/home.aspx
     description: National Federation of Music Societies
