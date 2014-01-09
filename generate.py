@@ -30,25 +30,26 @@ _paragraph_re = re.compile(r'(?:\r\n|\r|\n){2,}')
 
 @jinja2.evalcontextfilter
 def paraText(eval_ctx, value):
-#	result = value.replace("\xc2", "&pound;")
-#	result = u'\n\n'.join(u'<p>%s</p>' % p.replace('\n', '<br>\n') for p in _paragraph_re.split(jinja2.escape(value)))
-
-	#value = jinja2.escape(value)
 	value = jinja2.escape(value)
 	paras = value.split("\n")
-	result = "<p>" + "</p>\n<p>".join(paras) + "</p>"
+	result = "</p>\n<p>".join(paras)
 
 	# Get correct coding before making replacements for html entities
-	result = result.encode("utf-8")
-	result = result.replace("£", "&pound;")
-	result = result.replace(u'\xa0', " ")
-	result = result.replace(u'\u2013', "-")
-	result = result.replace(u'\u2019', "'")
-	result = EMAILS.sub(r'<a href="mailto:\1">\1</a>', result)
+	try:
+		result = result.replace(u"\u00A3", "&pound;")
+		result = result.replace(u'\u2013', "-")
+		result = result.replace(u'\u2019', "'")
+		result = result.replace(u'\u0159', "&#x159;")
+		result = result.replace(u'\xa0', " ")
+		result = result.replace(u"\xe1", "&aacute;")
+		result = EMAILS.sub(r'<a href="mailto:\1">\1</a>', result)
+		result_enc = result.decode("utf-8")
+	except Exception, exc:
+		import pdb; pdb.set_trace()
 
 	if eval_ctx.autoescape:
-		result = jinja2.Markup(result)
-	return result
+		result_enc = jinja2.Markup(result_enc)
+	return result_enc
 
 def readTemplate(parentDir, templateDir, name):
 	path = os.path.join(parentDir, templateDir, name)
@@ -87,8 +88,8 @@ def generateSite(parentDir, templateDir, pagesDir, contentDir, siteDir):
 		if os.path.exists(contentPath):
 			contentStream = file(contentPath, "r")
 			content = yaml.load(contentStream)
-			import pprint
-			pprint.pprint("Path: %r, content: %r" % (contentPath, content))
+#			import pprint
+#			pprint.pprint("Path: %r, content: %r" % (contentPath, content))
 		else:
 			content = {}
 

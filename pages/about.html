@@ -1,5 +1,11 @@
 {% extends "layout.html" %}
+
 {% block content %} 
+<script type="text/javascript">
+	$(document).ready(function() {
+		$(".lightbox").fancybox();
+	});
+</script>
 <div class="content">
 
 <h2>Haslemere Musical Society</h2>
@@ -40,6 +46,8 @@
 	a voyeuristic feel that is testament to Roger's ability to paint a moment, even
 	an instant, and successfully relay thought and sense to the viewer.</p>
 
+	<h2 id="members">Members</h2>
+
 	<p>Members are amateur players and singers, while the Director of Music, Leader of
 	the Orchestra, Chorus Master and Soloists are professional appointments.
 	Choir and orchestra rehearsals take place in the Haslemere Hall
@@ -47,9 +55,52 @@
 	on Monday evenings at 7.30 pm from September until May with open sessions
 	in June.</p>
 
+	<p>Click to see: <a class="lightbox" href="#choir_list">chorus members</a></p>
+
 	<p>New members, both singers and instrumentalists, are always welcome bringing
 	enthusiasm, commitment and a love of music (<a href="join.html">more details</a>).
 	</p>
+
+	<div id="choir_list" class="hidden">
+		<h3>{{membership.choir.title}}</h3>
+
+		<table>
+		<tr>
+			<td>		
+				<h4>Sopranos</h4>
+				<ul>
+				{% for member in  membership.choir.sopranos %}
+					<li>{{member}}</li>
+				{% endfor %}
+				</ul>
+
+			</td>		
+			<td>		
+				<h4>Contraltos</h4>
+				<ul>
+				{% for member in  membership.choir.contraltos %}
+					<li>{{member}}</li>
+				{% endfor %}
+				</ul>
+			</td>		
+			<td>		
+				<h4>Tenors</h4>
+				<ul>
+				{% for member in  membership.choir.tenors %}
+					<li>{{member}}</li>
+				{% endfor %}
+				</ul>
+
+				<h4>Basses</h4>
+				<ul>
+				{% for member in  membership.choir.basses %}
+					<li>{{member}}</li>
+				{% endfor %}
+				</ul>
+			</td>		
+		</tr>
+		</table>
+	</div>
 
 </div>	<!-- end: hms - content_col -->
 

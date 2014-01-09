@@ -99,6 +99,28 @@
 
 <div class="clear_float"></div>
 
+<div class="img_col_rhs">
+	<img src="images/90thParty.png">
+</div>	<!-- img_col -->
+<div class="content_col_lhs">
+	<h2>HMS Anniversary Party</h2>
+
+	<p>What a great way to end the HMS 90th Anniversary year in 2013!</p>
+
+	<p>Members enjoyed a glass of mulled wine and tucked in to Lorraine Collins'
+	wonderful Celebration Cake which not only looked great but was also delicious!</p>
+
+	<p>December 2013 was a memorable month for HMS members. The concert on the 7th was
+	a great success and much admired by both the audience and the reviewer. A special
+	triumph was the re-incarnation of the Beethoven Eroica Symphony, played with piano
+	support at the first HMS concert in 2023 but this time played with aplomb by the
+	full orchestra.  The choir also excelled itself in the Vivaldi Gloria and the Bach Wachet Auf
+	winning accolades all round.</p>
+
+</div>	<!-- content_col -->
+
+
+<div class="clear_float"></div>
 <a id="member_information"></a>
 <h2>Member information</h2>
 
@@ -116,22 +138,41 @@
 <table>
 	<thead>
 		<th>Date</th>
-		<th>Movement</th>
+		<th>Chorus</th>
+		<th>Orchestra</th>
 	</thead>
 {% for rehearsal in rehearsals.schedule %}
 	<tr>
 		<td>{{rehearsal.date}}</td>
 		<td>
-		<ul>
-		{% for movement in rehearsal.movement %}
-			<li>{{movement}}</li>
+		{% for movement in rehearsal.choir or [] %}
+			{{movement|paraText}}<br/>
 		{% endfor %}
-		</ul>
+		</td>
+		<td>
+		{% for movement in rehearsal.orchestra or [] %}
+			{{movement|paraText}}<br/>
+		{% endfor %}
 		</td>
 	</tr>
 {% endfor %}
 </table>
 {% endif %}
+
+<h3>{{ future_dates.title }}</h3>
+
+<p>{{ future_dates.text|paraText}}</p>
+
+<dl>
+	{% for item in future_dates.dates %}
+		<dt>{{ item.category }}
+		<dd><ul>
+        {% for date in item.dates %}
+			<li>{{date}}</li>
+		{% endfor %}
+		</ul>
+	{% endfor %}
+</dl>
 
 <a id="links"></a>
 <h3>Links and Rehearsal Music</h3>

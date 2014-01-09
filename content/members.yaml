@@ -9,47 +9,95 @@ rehearsals:
         also sometimes rehearses in St Christopher's Church, Weyhill."
 
     exceptions:
-        - "All rehearsals in the Haslemere Hall except: 18th March 2013"
-        - "Summer sessions: 3rd, 10th, 17th and 24th June 2013"
+        - "Every Monday from 6th January to 5th May in Haslemere Hall (except for 24th March)"
+        - "No Rehearsal on Easter Monday 21st April"
+        - "Summer Sessions 2014:  2nd & 9th June in Haslemere Hall, 16th and 23rd June in St Christopher's Church"
 
     schedule:
       - date: Jan 6th
-        movement:
+        choir:
             - Kyrie
             - Sanctus
+        orchestra:
       - date: Jan 13th
-        movement:
+        choir:
             - Benedictus
             - Sanctus (revision)
+        orchestra:
+            - (Tom)
+            - Dvořák i
+            - Bruckner Kyrie and Gloria
       - date: Jan 20th
-        movement:
+        choir:
             - Credo (to bar 174)
             - Kyrie (revision)
+        orchestra:
+            - (Tom)
+            - Dvořák ii, iii
+            - Bruckner Credo, Benedictus
       - date: Jan 27th
-        movement:
+        choir:
             - Credo (bar 177 - end))
             - Benedictus (revision)
+        orchestra:
+            - (Photographer present)
+            - Dvořák  iii, iv
+            - Bruckner Sanctus, Agnus Dei
       - date: Feb 3rd
-        movement:
+        choir:
             - Gloria (to bar 105)
             - Credo (whole movement - revision)
+        orchestra:
+            - Holst, Fugal Overture
+            - Dvořák i, ii
+            - Bruckner tbc
       - date: Feb 10th
-        movement:
+        choir:
             - Gloria (bar 120 - end)
             - Gloria (whole movement)
+        orchestra:
+            - Holst
+            - Dvořák iii, iv
+            - Bruckner tbc
       - date: Feb 17th
-        movement:
+        choir:
             - Credo
             - Sanctus
             - Benedictus
+        orchestra:
+            - Holst
+            - Dvořák i, ii
+            - Bruckner, Credo, Sanctus, Benedictus
       - date: Feb 24th
-        movement:
+        choir:
             - Kyrie
             - Gloria
             - Agnus Dei
+        orchestra:
+            - Holst
+            - Dvořák iii, iv
+            - Bruckner, Kyrie, Gloria, Agnus Dei
       - date: Mar 3rd
-        movement:
+        choir:
             - Run Programme
+        orchestra:
+            - Holst
+            - Dvořák (all)
+            - Bruckner (all), with chorus
+
+future_dates:
+  title: Season 2014-2015
+  text: First rehearsal 8th September
+
+  dates: 
+      - category: Concert dates
+        dates:
+          - 6th December 2014
+          - 7th March 2015
+          - 9th May 2015
+      - category: AGM
+        dates:
+          - 13th October (provisional)
 
 external_links:
   - label: Choraline
