@@ -72,14 +72,17 @@
 
 	<p>{{membership.friend.text|paraText}}</p>
 
-	<a class="lightbox" href="#friends_list">Current Friends</a>
-	<div id="friends_list" class="hidden">
+	<p><a class="lightbox" href="#friends_list">Current Friends of the society.</a></p>
+	<div id="friends_list" class="hidden people">
 		<h3>{{membership.friend.people_title}}</h3>
+
+		We would like to thank:
 		<ul>
 		{% for friend in  membership.friend.people %}
 			<li>{{friend}}</li>
 		{% endfor %}
 		</ul>
+		for their support as Friends of the society.
 	</div>
 
 	<a id="patron"></a>
@@ -87,14 +90,17 @@
 
 	<p>{{membership.patron.text|paraText}}</p>
 
-	<a class="lightbox" href="#patrons_list">Current Patrons</a>
-	<div id="patrons_list" class="hidden">
+	<p><a class="lightbox" href="#patrons_list">Current Patrons of the society.</a></p>
+	<div id="patrons_list" class="hidden people">
 		<h3>{{membership.patron.people_title}}</h3>
+
+		We would like to thank:
 		<ul>
 		{% for friend in  membership.patron.people %}
 			<li>{{friend}}</li>
 		{% endfor %}
 		</ul>
+		for their support as Patrons of the society.
 	</div>
 
 	<p>{{membership.contact|paraText}}</p>

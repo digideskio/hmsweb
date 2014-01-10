@@ -148,6 +148,21 @@
 	width: 40em;
 }
 
+.people td, .people table {
+	border: 0px none #333333; 
+	border-collapse: collapse;
+}
+.people h3,
+.people h4 {
+	padding-bottom: 0.5em;
+}
+
+.people ul {
+	list-style-type: none;
+	padding: 0em;
+	font-size: 0.9em;
+}
+
 .work_composer,
 .conductor_label,
 .performer_label {
