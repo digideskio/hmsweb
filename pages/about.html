@@ -55,11 +55,8 @@
 	on Monday evenings at 7.30 pm from September until May with open sessions
 	in June.</p>
 
+	{% if membership and 'choir' in membership %}
 	<p>Click for: <a class="lightbox" href="#choir_list">chorus members</a>.</p>
-
-	<p>New members, both singers and instrumentalists, are always welcome bringing
-	enthusiasm, commitment and a love of music (<a href="join.html">more details</a>).
-	</p>
 
 	<div id="choir_list" class="hidden people">
 		<h3>{{membership.choir.title}}</h3>
@@ -101,6 +98,12 @@
 		</tr>
 		</table>
 	</div>
+
+	{% endif %}
+
+	<p>New members, both singers and instrumentalists, are always welcome bringing
+	enthusiasm, commitment and a love of music (<a href="join.html">more details</a>).
+	</p>
 
 </div>	<!-- end: hms - content_col -->
 
