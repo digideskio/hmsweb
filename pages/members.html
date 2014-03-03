@@ -189,5 +189,21 @@
 {% endfor %}
 </table>
 
+<h3>Other musical opportunities</h3>
+{% for item in other_opportunities %}
+	<dl>
+		<dt>{{item.label}}</td>
+		<dd>{{item.description|paraText}}
+		{% if item.links %}
+			<p>For more details see:
+			{% for lnk in item.links %}
+				<a href="{{lnk.target}}">{{lnk.description}}</a>
+			{% endfor %}
+			</p>
+		{% endif %}
+		</td>
+	</dl>
+{% endfor %}
+
 </div> <!-- End Content -->
 {% endblock %}
