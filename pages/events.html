@@ -225,28 +225,33 @@ orchestra.</p>
 -->
 <div class="content_full_width">
 	<a id="season"></a>
-	<h3>2013-2014 Season</h3>
+{% for season in series %}
+
+	<h3>{{season.name}}</h3>
 
 	<table>
 		<thead>
 		<tr><th>Date/Location</th><th>Performers</th><th>Works</th></tr>
 		</thead>
 		<tbody>
+		{% for ev in season.events %}
 		<tr>
-			<td>10<sup>th</sup> May 2014<br/>
-			Haslemere Hall</td>
-			<td>Orchestra and Chorus</td>
-			<td>Brahms: <em>Academic Festival Overture</em><br/>
-			Bruch: <em>Scottish Fantasy</em> (Tom Horn, violin)<br/>
-			Bach (arr. Gounod): <em>Ave Maria</em><br/>
-			Franck: <em>Psalm 150</em><br/>
-			Franck: <em>Panis Angelicus</em><br/>
-			Vaughan Williams: <em>English Folksong Suite</em> (orch. Gordon Jacob)<br/>
-			Mozart: <em>Ave Verum Corpus</em><br/>
-			Handel: Coronation Anthems (<em>The King shall Rejoice</em> and <em>Zadok the Priest</em>)</td>
+			<td>{{ev.date}}<br/>
+			{{ev.where}}</td>
+			<td>{{ev.who}}</td>
+			<td>
+			{% for work in ev.what %}
+			{{work.composer|paraText}}: <em>{{work.piece|paraText}}</em> {{work.comment|paraText}}<br/>
+			{% endfor %}
+			</td>
 		</tr>
+		{% endfor %}
 		</tbody>
 	</table>
+
+{% endfor %}
+
+
 </div>
 
 <div class="img_col_rhs">

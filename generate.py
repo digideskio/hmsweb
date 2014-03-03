@@ -21,6 +21,7 @@ def construct_yaml_str(self, node):
     # Override the default string handling function 
     # to always return unicode objects
     return self.construct_scalar(node)
+
 yaml.Loader.add_constructor(u'tag:yaml.org,2002:str', construct_yaml_str)
 yaml.SafeLoader.add_constructor(u'tag:yaml.org,2002:str', construct_yaml_str)
 
@@ -42,9 +43,14 @@ def paraText(eval_ctx, value):
 		result = result.replace(u'\u0159', "&#x159;")
 		result = result.replace(u'\xa0', " ")
 		result = result.replace(u"\xe1", "&aacute;")
+		result = result.replace(u'\u2018', "&#x2018;") # ‘
+		result = result.replace(u'\u2018', "&#x2019;") # ‘
+		result = result.replace(u"\xfc", "&uuml;") # ü
+		result = result.replace(u'\xec', "i") # ì
 		result = EMAILS.sub(r'<a href="mailto:\1">\1</a>', result)
 		result_enc = result.decode("utf-8")
 	except Exception, exc:
+		print str(exc)
 		import pdb; pdb.set_trace()
 
 	if eval_ctx.autoescape:
