@@ -75,6 +75,11 @@ body {
 	float: right;
 }
 
+#concert_promo p {
+	font-size: 0.9em;
+	font-style: italic;
+}
+
 #society_promo img {
 	width: 203px;
 	height: 162px;

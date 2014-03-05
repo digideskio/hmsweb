@@ -43,8 +43,11 @@ def paraText(eval_ctx, value):
 		result = result.replace(u'\u0159', "&#x159;")
 		result = result.replace(u'\xa0', " ")
 		result = result.replace(u"\xe1", "&aacute;")
+		result = result.replace( u'\xe9', "&eacute;")
 		result = result.replace(u'\u2018', "&#x2018;") # ‘
 		result = result.replace(u'\u2018', "&#x2019;") # ‘
+		result = result.replace(u'\u201c', "&#x201c;") # “
+		result = result.replace(u'\u201d', "&#x201d;") # ”
 		result = result.replace(u"\xfc", "&uuml;") # ü
 		result = result.replace(u'\xec', "i") # ì
 		result = EMAILS.sub(r'<a href="mailto:\1">\1</a>', result)
@@ -83,12 +86,15 @@ def generateSite(parentDir, templateDir, pagesDir, contentDir, siteDir):
 	pages = getPages(parentDir, pagesDir)
 
 	for page in pages:
+		multiPage = False
+
 		# Get the template
 		pageFile = os.path.basename(page)
 		template = env.get_template(pageFile)
 
 		# Get teh content to go into the template
-		contentFile = os.path.splitext(pageFile)[0] + ".yaml"
+		pageName = os.path.splitext(pageFile)[0]
+		contentFile = pageName + ".yaml"
 		contentPath = os.path.join(parentDir, contentDir, contentFile)
 
 		if os.path.exists(contentPath):
@@ -99,17 +105,37 @@ def generateSite(parentDir, templateDir, pagesDir, contentDir, siteDir):
 		else:
 			content = {}
 
-		pageContent = template.render(**content)
+		if 'multipage' in content:
+			multiPage = True
+			# Might want to pop off the pages and combine it with contents each time..
+			# but not today
+			pages = content[content['multipage']['pages']]
+			pageKey = content['multipage']['page_key']
 
-		try:
-			destFile = os.path.join(parentDir, siteDir, pageFile)
-			with open(destFile, 'w') as fileOut:
-				fileOut.write(pageContent)
-		except Exception, exc:
-			print "Error writing: %s" % (destFile,)
-			print str(exc)
-			import pdb; pdb.set_trace()
-			raise
+			content = sorted(pages, key=lambda pg: pg[pageKey])
+		else:
+			content = [content]
+
+		for pgContent in content:
+
+			rendered = template.render(**pgContent)
+
+			if multiPage:
+				key = pgContent[pageKey]
+				key = key.replace("/", "_")
+				name, ext = os.path.splitext(pageFile)
+				destFile = os.path.join(parentDir, siteDir, name + "_" + key + ext)
+			else:
+				destFile = os.path.join(parentDir, siteDir, pageFile)
+
+			try:
+				with open(destFile, 'w') as fileOut:
+					fileOut.write(rendered)
+			except Exception, exc:
+				print "Error writing: %s" % (destFile,)
+				print str(exc)
+				import pdb; pdb.set_trace()
+				raise
 
 if __name__ == "__main__":
 
