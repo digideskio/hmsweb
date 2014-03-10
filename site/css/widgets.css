@@ -40,7 +40,7 @@
 .event_promo .works dt {
 	font-weight: bold;
 	float: left;
-	width: 8em;
+	width: 10em;
 }
 
 .event_promo .works dt.description {
@@ -48,10 +48,10 @@
 }
 
 .event_promo .works dd {
-	margin-left: 8em;
+	margin-left: 10em;
 	margin-bottom: 0.2em;
-	float: clear;
 	font-style: italic;
+	float: clear;
 }
 
 .event_promo img {

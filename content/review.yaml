@@ -495,3 +495,27 @@ reviews:
       - file: "images/reviews/conductingSriLanka.png"
         alt_text: "Come and Sing 2014"
         strap_line: "Conducting Sri Lanka’s largest orchestral concert"
+
+  - date_key: "2014/03/10"
+    heading: "March 8 Concert: Brief Report"
+    text:
+        "The HMS concert on 8 March 2014 proved a tour de force for both choir
+        and orchestra. It is a curious fact that, for a society over 90 years old, the
+        occasion was almost a coming of age. The orchestra, probably better than it has
+        ever been, gave a moving and intensely rich performance of Dvorak's 6th
+        symphony. 
+        
+        The choir, who had wrestled for two months with a difficult Bruckner Mass and
+        had occasionally wondered whether it would ever work, ended the evening to
+        rapturous applause, feeling that this evening, more than anything in their
+        recent past, had defined them as entirely worthy of the faithful audiences who
+        come out, year after year, to hear them perform. 
+        
+        As a society, choir and orchestra together, they are on a high which should
+        long sustain them as they head to their centenary.
+        "
+    reviewer: ""
+    images:
+      - file: "images/reviews/soloists8March2014.png"
+        alt_text: "Soloists and Conductor"
+        strap_line: "Soloists & Conductor from the left: Edward Roberts (Baritone), Joanna Bywater (Mezzo Soprano), Mark Evans (Tenor), Eleanor Rastall (Soprano), James Ross (Conductor)"
