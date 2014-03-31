@@ -5,8 +5,6 @@ series:
       where: "St Christopher's Church"
       who: "Orchestra"
       what:
-        - composer: "Brahms"
-          piece: "Academic Festival Overture"
         - composer: "Debussy (orch. Büsser)"
           piece: "Petite Suite"
         - composer: "Vaughan Williams"

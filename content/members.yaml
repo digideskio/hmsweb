@@ -14,76 +14,73 @@ rehearsals:
         - "Summer Sessions 2014:  2nd & 9th June in Haslemere Hall, 16th and 23rd June in St Christopher's Church"
 
     schedule:
-      - date: Jan 6th
+      - date: Mar 17th
         choir:
-            - Kyrie
-            - Sanctus
+          - Panis Angelicus
+          - Let Thy Hand Be Strengthened (25–153)
+          - Psalm 150 (26–75)
         orchestra:
-      - date: Jan 13th
+          - No call for people not in these works:
+          - J.S. Bach, Ave Maria (arr. Gounod)
+          - Franck, Panis Angelicus
+          - Mozart, Ave Verum Corpus
+          - Handel, Coronation Anthems: The King shall Rejoice and Zadok the Priest
+      - date: Mar 24th
         choir:
-            - Benedictus
-            - Sanctus (revision)
+          - Ave Maria 
+          - Let Thy Hand be Strengthened (153 - end)
+          - My Heart is Inditing (22 – 96)
+          - Psalm 150 (78 – end)
         orchestra:
-            - (Tom)
-            - Dvořák i
-            - Bruckner Kyrie and Gloria
-      - date: Jan 20th
+          - Brahms
+          - Franck Psalm
+          - Vaughan Williams
+      - date: Mar 31st
         choir:
-            - Credo (to bar 174)
-            - Kyrie (revision)
+          - Ave Maria
+          - My Heart is Inditing (110 – 240)
+          - Psalm 150
         orchestra:
-            - (Tom)
-            - Dvořák ii, iii
-            - Bruckner Credo, Benedictus
-      - date: Jan 27th
+          - Bruch
+          - Franck Panis Angelicus
+          - Mozart
+          - Bach
+      - date: Apr 7th
         choir:
-            - Credo (bar 177 - end))
-            - Benedictus (revision)
+          - My Heart is Inditing (Bar 260–end)
+          - Ave Verum 
+          - Let Thy Hand be Strengthened
         orchestra:
-            - (Photographer present)
-            - Dvořák  iii, iv
-            - Bruckner Sanctus, Agnus Dei
-      - date: Feb 3rd
+          - Brahms
+          - Franck Psalm
+          - Vaughan Williams
+      - date: Apr 14th
         choir:
-            - Gloria (to bar 105)
-            - Credo (whole movement - revision)
+          - Panis Angelicus
+          - Ave Maria
+          - My Heart is Inditing 
+          - Psalm 150
         orchestra:
-            - Holst, Fugal Overture
-            - Dvořák i, ii
-            - Bruckner tbc
-      - date: Feb 10th
+          - Part 1: Brahms, Vaughan Williams
+          - Part 2: Franck Psalm; Panis Angelicus
+          - Bach - with chorus
+      - date: Apr 28th
         choir:
-            - Gloria (bar 120 - end)
-            - Gloria (whole movement)
+          - (2nd half with orchestra)
+          - Let Thy Hand be Strengthened 
+          - My Heart is Inditing
+          - Zadok The Priest
         orchestra:
-            - Holst
-            - Dvořák iii, iv
-            - Bruckner tbc
-      - date: Feb 17th
+          - (2nd half with Chorus)
+          - Part 1: Bruch 
+          - Part 2: Handel; Mozart 
+      - date: May 5th
         choir:
-            - Credo
-            - Sanctus
-            - Benedictus
+          - (2nd half with orchestra)
+          - Whole programme
         orchestra:
-            - Holst
-            - Dvořák i, ii
-            - Bruckner, Credo, Sanctus, Benedictus
-      - date: Feb 24th
-        choir:
-            - Kyrie
-            - Gloria
-            - Agnus Dei
-        orchestra:
-            - Holst
-            - Dvořák iii, iv
-            - Bruckner, Kyrie, Gloria, Agnus Dei
-      - date: Mar 3rd
-        choir:
-            - Run Programme
-        orchestra:
-            - Holst
-            - Dvořák (all)
-            - Bruckner (all), with chorus
+          - (2nd half with Chorus)
+          - Whole programme
 
 future_dates:
   title: Season 2014-2015

@@ -92,7 +92,7 @@ def generateSite(parentDir, templateDir, pagesDir, contentDir, siteDir):
 		pageFile = os.path.basename(page)
 		template = env.get_template(pageFile)
 
-		# Get teh content to go into the template
+		# Get the content to go into the template
 		pageName = os.path.splitext(pageFile)[0]
 		contentFile = pageName + ".yaml"
 		contentPath = os.path.join(parentDir, contentDir, contentFile)
@@ -100,8 +100,6 @@ def generateSite(parentDir, templateDir, pagesDir, contentDir, siteDir):
 		if os.path.exists(contentPath):
 			contentStream = file(contentPath, "r")
 			content = yaml.load(contentStream)
-#			import pprint
-#			pprint.pprint("Path: %r, content: %r" % (contentPath, content))
 		else:
 			content = {}
 
