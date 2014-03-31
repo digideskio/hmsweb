@@ -20,11 +20,11 @@ rehearsals:
           - Let Thy Hand Be Strengthened (25–153)
           - Psalm 150 (26–75)
         orchestra:
-          - No call for people not in these works:
+          - "No call for people not in these works:"
           - J.S. Bach, Ave Maria (arr. Gounod)
           - Franck, Panis Angelicus
           - Mozart, Ave Verum Corpus
-          - Handel, Coronation Anthems: The King shall Rejoice and Zadok the Priest
+          - "Handel, Coronation Anthems: The King shall Rejoice and Zadok the Priest"
       - date: Mar 24th
         choir:
           - Ave Maria 
@@ -61,8 +61,8 @@ rehearsals:
           - My Heart is Inditing 
           - Psalm 150
         orchestra:
-          - Part 1: Brahms, Vaughan Williams
-          - Part 2: Franck Psalm; Panis Angelicus
+          - "Part 1: Brahms, Vaughan Williams"
+          - "Part 2: Franck Psalm; Panis Angelicus"
           - Bach - with chorus
       - date: Apr 28th
         choir:
@@ -72,8 +72,8 @@ rehearsals:
           - Zadok The Priest
         orchestra:
           - (2nd half with Chorus)
-          - Part 1: Bruch 
-          - Part 2: Handel; Mozart 
+          - "Part 1: Bruch"
+          - "Part 2: Handel; Mozart"
       - date: May 5th
         choir:
           - (2nd half with orchestra)
