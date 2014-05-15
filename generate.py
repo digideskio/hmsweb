@@ -97,11 +97,12 @@ def generateSite(parentDir, templateDir, pagesDir, contentDir, siteDir):
 	env.autoescape = True
 	env.filters['paraText'] = paraText
 
-
 	pages = getPages(parentDir, pagesDir)
 
+
+	all_content = {}
+
 	for page in pages:
-		multiPage = False
 
 		# Get the template
 		pageFile = os.path.basename(page)
@@ -114,9 +115,18 @@ def generateSite(parentDir, templateDir, pagesDir, contentDir, siteDir):
 
 		if os.path.exists(contentPath):
 			contentStream = file(contentPath, "r")
-			content = yaml.load(contentStream)
-		else:
-			content = {}
+			all_content[page] = yaml.load(contentStream)
+
+
+	for page in pages:
+		multiPage = False
+
+		content = all_content.get(page, {}).copy()
+		content['__all__'] = all_content
+
+		# Get the template
+		pageFile = os.path.basename(page)
+		template = env.get_template(pageFile)
 
 		if 'multipage' in content:
 			multiPage = True

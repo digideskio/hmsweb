@@ -9,8 +9,9 @@ in the Haslemere Hall.  An additional orchestral concert is held in St
 Christopher's Church, Weyhill, often featuring a soloist from within the
 orchestra.</p>
 
+{% for concert in (series[next_event.series]['events'][next_event.event],) %}
 <a id="latest_concert"></a>
-<h3>May Concert</h3>
+<h3>{{ concert.name }}</h3>
 
 <div class="performance">
 
@@ -22,17 +23,19 @@ orchestra.</p>
 	</div> <!-- decor -->
 
 	<div class="details">
-
-		<span class="date">Saturday 10<super>th</super> May 2014, 19:30</span>
-		<span class="location">Haslemere Hall (<a href="http://www.haslemerehall.co.uk/" target="_blank">venue</a>)</span>
+		<span class="date">{{concert.date}}</span>
+		<span class="location">{{ concert.where }} 
+			{% if concert.where == 'Haslemere Hall' %}
+				(<a href="http://www.haslemerehall.co.uk/" target="_blank">venue</a>)
+			{% elif concert.where == "St Christopher's Church" %}
+				(<a href="https://maps.google.com/maps?ll=51.090114,-0.726321&spn=0.007857,0.019205&fb=1&hq=st+christopher's+church+haslemere&hnear=st+christopher's+church+haslemere&cid=0,0,14877506155288956453&t=h&z=16&iwloc=A" target="_blank">venue</a>)
+			{% endif %}
+		</span>
 		<span class="tickets">
 			Tickets: &pound;8.00 - &pound;15.00</br>
 			Under 18: Half price
 		</span>
 
-<!--
-		<span class="location">St Christopher's Church (<a href="https://maps.google.com/maps?ll=51.090114,-0.726321&spn=0.007857,0.019205&fb=1&hq=st+christopher's+church+haslemere&hnear=st+christopher's+church+haslemere&cid=0,0,14877506155288956453&t=h&z=16&iwloc=A" target="_blank">venue</a>)</span>
--->
 		<!-- performers -->
 		<table class="performers">
 			<tr>
@@ -45,97 +48,17 @@ orchestra.</p>
 			<tr>
 				<td colspan=2><h4 class="concert_heading">Works:</h4></td>
 			</tr>
-			<tr>
-				<td class="work_composer">
-					Brahms
-				</td>
-				<td class="work_title">
-					Academic Festival Overture
-				</td>
-			</tr>
-			<tr>
-				<td class="work_composer">
-					Bruch
-				</td>
-				<td class="work_title">
-					Scottish Fantasy (Tom Horn, violin)
-				</td>
-			</tr>
-			<tr>
-				<td class="work_composer">
-					Bach (arr. Gounod)
-				</td>
-				<td class="work_title">
-					Ave Maria
-				</td>
-			</tr>
-			<tr>
-				<td class="work_composer">
-					Franck
-				</td>
-				<td class="work_title">
-					Psalm 150 
-				</td>
-			</tr>
-			<tr>
-				<td class="work_composer">
-					Franck
-				</td>
-				<td class="work_title">
-					Panis Angelicus 
-				</td>
-			</tr>
-			<tr>
-				<td class="work_composer">
-					Vaughan Williams
-				</td>
-				<td class="work_title">
-					English Folksong Suite (orch. Gordon Jacob)
-				</td>
-			</tr>
-			<tr>
-				<td class="work_composer">
-					Mozart
-				</td>
-				<td class="work_title">
-					Ave Verum Corpus 
-				</td>
-			</tr>
-			<tr>
-				<td class="work_composer">
-					Handel
-				</td>
-				<td class="work_title">
-					Coronation Anthems (The King shall Rejoice and Zadok the Priest)
-				</td>
-			</tr>
-
-			</tr>
+			{% for work in concert.what %}
+				<tr>
+					<td class="work_composer">{{ work.composer|paraText }}</td>
+					<td class="work_title">{{ work.piece|paraText }}</td>
+				</tr>
+			{% endfor %}
 		</table>
-<!--		<p class="performance_notes">
-		</p>
--->
-<!--
-		<table class="performers">
-			<tr>
-				<td colspan=2><h4 class="concert_heading">Soloists:</h4></td>
-			</tr>
-			<tr>
-				<td class="performer_label">Soprano</td>
-				<td class="performer_value">Sara Wallander Ross</td>
-			</tr>
-			<tr>
-				<td class="performer_label">Mezzo-Soprano</td>
-				<td class="performer_value">Angharad Lewis</td>
-			</tr>
-		</table>
-		<p class="performance_notes">
-		</p>
 
--->
-
-		<p><a href="images/flyers/concert_2014_05_10.pdf" target="_blank">Download Flyer</a></p>
-
+		{% if concert.flyer %}
+		<p><a href="{{ concert.flyer }}" target="_blank">Download Flyer</a></p>
+		{% endif %}
 		<span class="perf_button">
 			<a class="link_button" href="http://www.intelligent-tickets.com/index.php?th=hh" target="_blank">Buy Tickets</a>
 		</span>
@@ -144,110 +67,12 @@ orchestra.</p>
 
 	<span class="clear_float"></span>
 </div> <!-- performance -->
+{% endfor %}
 
 <div class="clear_float"></div>
-<!--
-<div class="content_full_width">
-	<a id="tickets"></a>
-	<h2>Tickets</h2>
-
-	<p>Tickets for all of our events are available online and in person from the
-	<a href="http://www.haslemerehall.co.uk" target="_blank">Haslemere Hall Box Office (www.haslemerehall.co.uk)</a>
-	or from Society members.</p>
-</div>
--->
-
-<!--
-<div class="img_col_rhs">
-	<img src="images/violinist.png" />
-</div>
-<div class="content_col_lhs">
-	<h3><a id="summer_sessions" href="join.html#summer_sessions">Summer Sessions</a></h3>
-
-	<p>In the Summer the Society runs four Summer Sessions which are open to all. One
-	session is with both the orchestra and chorus and the others are normally for
-	orchestra only. </p>
-
-	<p>This year there is an extra choir only session. Various works are sight read
-	and performed with a guest conductor. A charge of &pound;4 is made to cover music
-	hire, venue and refreshments. The Society welcomes musicians and singers who
-	are not currently members of the Society. </p>
-
-	<p>The sessions are in the Haslemere Hall (please use the rear entrance) from
-	7.30 to 10.00pm.</p>
-
-	<span class="clear_float"></span>
-</div> 
-
-
-<div class="content_full_width">
-	<table>
-		<thead>
-			<th>Date</th>
-			<th>Composer</th>
-			<th>Work</th>
-			<th>Conductor</th>
-			<th>Participants</th>
-		</thead>
-	<tr>
-		<td>3<sup>rd</sup> June </td>
-		<td>Dukas</td>
-		<td><em>Sorcerer's Apprentice</em></td>
-		<td>Christopher Hann</td>
-		<td>Orchestra and Chorus</td>
-	</tr>
-	<tr>
-		<td></td>
-		<td>Handel</td>
-		<td><em>The King Shall Rejoice, Zadok the Priest</em></td>
-		<td></td>
-		<td></td>
-	</tr>
-	<tr>
-		<td>10<sup>th</sup> June</td>
-		<td>Parry</td>
-		<td><em>I Was Glad</em></td>
-		<td>Sarah Thomas</td>
-		<td>Orchestra and Chorus</td>
-	</tr>
-	<tr>
-		<td></td>
-		<td></td>
-		<td>Lighter works, including <em>Palm Court</em> and <em>Pimms</em></td>
-		<td>Tom Horn</td>
-		<td>Orchestra</td>
-	</tr>
-	<tr>
-		<td>17<sup>th</sup> June</td>
-		<td>Dvor&#780;&aacute;k</td>
-		<td><em>Serenade for Strings</em></td>
-		<td>Christopher Hann</td>
-		<td>Orchestral string section</td>
-	</tr>
-	<tr>
-		<td></td>
-		<td></td>
-		<td><em>Czech Suite for Winds</em></td>
-		<td>TBD</td>
-		<td>Orchestra wind section</td>
-	</tr>
-	<tr>
-		<td>24<sup>th</sup> June</td>
-		<td>Holst</td>
-		<td>Movements from <em>Planets Suite</em> including <em>Mars</em></td>
-		<td>Mark Cardy</td>
-		<td>Orchestra</td>
-	</tr>
-	</table>
-
-	<p>Contact Marion Thomas on 07789 994915 for more information.</p>
-</div>
-
-<div class="clear_float"></div>
--->
 <div class="content_full_width">
 	<a id="season"></a>
-{% for season in series %}
+{% for season in series[next_event.series:] %}
 
 	<h3>{{season.name}}</h3>
 
@@ -256,7 +81,7 @@ orchestra.</p>
 		<tr><th>Date/Location</th><th>Performers</th><th>Works</th></tr>
 		</thead>
 		<tbody>
-		{% for ev in season.events %}
+		{% for ev in season.events[next_event.event+1:] %}
 		<tr>
 			<td>{{ev.date}}<br/>
 			{{ev.where}}</td>

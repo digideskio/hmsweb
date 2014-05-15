@@ -1,9 +1,15 @@
+next_event:
+  series: 0
+  event: 0
+
 series:
   - name: "2014-2015 Season"
     events:
-    - date: "18 October 2014"
+    - name: "October Concert"
+      date: "18 October 2014"
       where: "St Christopher's Church"
       who: "Orchestra"
+      flyer:
       what:
         - composer: "Debussy (orch. Büsser)"
           piece: "Petite Suite"
