@@ -1,25 +1,9 @@
+{% import "macros.html" as macros %}
 {% extends "layout.html" %}
 {% block content %} 
 <div class="content">
 
-<div>
-	<div class="img_col">
-		{% for image in images %}
-		<img src="{{image.file}}" alt="{{image.alt_text}}" />
-		{% if image.strap_line %}
-		<p class="image_label">{{image.strap_line|paraText}}</p>
-		{% endif %}
-		{% endfor %}
-	</div>
-
-	<div class="content_col">
-		<h2>{{heading|paraText}}</h2>
-
-		<p>{{text|paraText}}</p>
-
-		<p><em>{{reviewer|paraText}}</em></p>
-	</div>
-</div>
+{{ macros.render_review(heading, text, reviewer, images) }}
 
 <div class="clear_float"></div>
 

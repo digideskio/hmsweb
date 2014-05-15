@@ -115,17 +115,19 @@ def generateSite(parentDir, templateDir, pagesDir, contentDir, siteDir):
 
 		if os.path.exists(contentPath):
 			contentStream = file(contentPath, "r")
-			all_content[page] = yaml.load(contentStream)
+			all_content[pageName] = yaml.load(contentStream)
 
 
 	for page in pages:
 		multiPage = False
 
-		content = all_content.get(page, {}).copy()
-		content['__all__'] = all_content
-
 		# Get the template
 		pageFile = os.path.basename(page)
+		pageName = os.path.splitext(pageFile)[0]
+
+		content = all_content.get(pageName, {}).copy()
+		content['__all__'] = all_content
+
 		template = env.get_template(pageFile)
 
 		if 'multipage' in content:

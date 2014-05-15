@@ -28,35 +28,24 @@
 
 	<div id="concert_promo" class="event_promo">
 
-		<h3><a href="events.html">Summer Concert</a></h3>
+{% for concert in (__all__.events.series[__all__.events.next_event.series]['events'][__all__.events.next_event.event],) %}
+		<h3><a href="events.html">{{ concert.name }}</a></h3>
 
 		<div class="details">
 
-			<span class="performers">Symphony Orchestra and Chorus</span><br/>
+			<span class="performers">{{ concert.who }}</span><br/>
 
-			<span class="date">Saturday 10<sup>th</sup> May</span>,
-			<span class="location">Haslemere Hall</span>,
+			<span class="date">{{ concert.date }}</span>,
+			<span class="location">{{ concert.where }}</span>,
 			<span class="when">19:30</span></br>
 			<dl class="works">
-				<dt>Brahms</dt>
-				<dd>Academic Festival Overture</dd>
-				<dt>Bruch</dt>
-				<dd>Scottish Fantasy (Tom Horn, violin)</dd>
-				<dt>Bach (arr. Gounod)</dt>
-				<dd>Ave Maria</dd>
-				<dt>Franck</dt>
-				<dd>Psalm 150 </dd>
-				<dt>Franck</dt>
-				<dd>Panis Angelicus </dd>
-				<dt>Vaughan Williams</dt>
-				<dd>English Folksong Suite (orch. Gordon Jacob)</dd>
-				<dt>Mozart</dt>
-				<dd>Ave Verum Corpus </dd>
-				<dt>Handel</dt>
-				<dd>Coronation Anthems (The King shall Rejoice and Zadok the Priest)</dd>
+			{% for work in concert.what %}
+				<dt>{{ work.composer|paraText }}</dt>
+				<dd>{{ work.piece|paraText }}</dd>
+			{% endfor %}
 			</dl>
 		</div>
-
+{% endfor %}
 		<div class="clear_float"></div>
 	</div>
 

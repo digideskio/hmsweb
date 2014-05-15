@@ -1,3 +1,4 @@
+{% import "macros.html" as macros %}
 {% extends "layout.html" %}
 {% block content %} 
 <div class="content">
@@ -102,50 +103,15 @@ orchestra.</p>
 </div>
 <div class="clear_float"></div>
 
+<a id="latest_reviews"></a>
+<h2>Latest Reviews</h2>
 <div>
-	<a id="latest_reviews"></a>
-	<h3>Latest Reviews</h3>
+	{% for review in (__all__.review.reviews[-1],) %}
+		
+		{{ macros.render_review(review.heading, review.text, review.reviewer, review.images) }}
 
-	<div class="img_col_rhs">
-		<img src="images/reviews/soloists8March2014.png" alt="Soloists and Conductor" />
-		<p class="image_label">Soloists &amp; Conductor from the left:
-		Edward Roberts (Baritone), Joanna Bywater (Mezzo Soprano), Mark Evans (Tenor),
-		Eleanor Rastall (Soprano), James Ross (Conductor)</p>
-	</div>
-
-	<div class="content_col_lhs">
-		<h2>Review of Haslemere Musical Society Concert March 8, 2014</h2>
-<p>Haslemere Musical Society once again demonstrated the quality and energy possible from an amateur musical ensemble during their concert on March 8. There was a true sense of celebration and occasion at Haslemere Hall, where the orchestra and the chorus, led by conductor James Ross, gathered to perform Dvo&#x159;&aacute;k's Symphony No. 6, and Bruckner's Locus Iste and Mass No. 1 in D Minor.</p>
-<p>The orchestra began the concert as they meant to go on - with plenty of energy and ever-building tension. The woodwinds were particularly impressive throughout the course of the evening, and overall the orchestra was as strong and together as I have ever seen them. But the highlight of the concert came in the form of Dvo&#x159;&aacute;k's Scherzo, which incorporates a reeling, rhythmic Czech dance called the Furiant, alternating constantly between two beats and three. It is complex music that is both challenging to the orchestra and exciting to the listener, and the HMS orchestra pulled it off triumphantly.</p>
-<p>The chorus brought in the second half of the concert with Bruckner's short and powerful Locus Iste, which showed off the chorus's capacity for tight harmonies. This was followed by an impressive and dynamic performance of Bruckner's Mass in D Minor. The Credo was particularly well-delivered, with the chorus and orchestra working together seamlessly. The Benedictus, an unforgiving and complicated movement for vocalists, with high and low notes alternating in rapid succession, was invigorating and exciting. For an amateur chorus, these singers were able to deliver an impressive performance of music that all too few choral groups ever encounter. If the chorus could tighten their diction and synchronise their beginning and ending consonants a bit better, they could come close to perfection.</p>
-<p>Four excellent soloists - Eleanor Rastall, Joanna Bywater, Mark Evans and Edward Roberts - enhanced the evening further, but one couldn't help feeling that they were not used to their greatest advantage. Admittedly, Bruckner makes less use of his soloists than many other composers, but it was a shame that all four were placed to the side, directly behind the brass sections, rather in the centre, where they could have been better heard.</p>
-<p>Afterwards I overheard it said that it was the best concert the Haslemere Musical Society has ever had. Having only attended a handful myself, I couldn't possibly confirm or deny, but their performance went a long way toward convincing me. Haslemere is extremely fortunately to have such a talented and dedicated musical society, and I think we can expect them to get better and better.</p>
-<p>The concert was dedicated to the memory of Colin Gilbert, a cellist who played in the orchestra for over 35 years and sadly passed away in December 2013. </p>
-
-		<p><em>Lera O'Sullivan</em></p>
-	</div>
+	{% endfor %}
 </div>
-
-<div>
-	<div class="img_col">
-				<img src="images/reviews/comeAndSing2014.png" alt="Come and Sing 2014" />
-				<p class="image_label">Come &amp; Sing at St Christopher's Church February 2014</p>
-					</div>
-
-	<div class="content_col">
-		<h2>Conductor James Ross on why he likes to be at the helm of HMS.</h2>
-
-		<p>FROM small beginnings in 1923, Haslemere Musical Society (HMS) is now both a force to be reckoned with and something of a rarity.</p>
-<p>The society is unusual in that it is one of the very few across the UK to have both an orchestra and a choir. It is also very fortunate to have Dr James Ross, an inspirational and high-profile British conductor as its musical director.</p>
-<p>Fresh from the success of a sell-out &#x2018;Come and Sing' concert at St Christopher's Church in Haslemere, orchestra and choir are now gearing up for their next big challenge, They will play Dvo&#x159;&aacute;k's Symphony No. 6 and sing Bruckner's very moving Mass No. 1 in D Minor during a joint concert in Haslemere Hall, on March 8.</p>
-<p>HMS choir members were joined by more than 100 singers from many different choirs and supported by around 40 members of the society's symphony orchestra augmented by other local players for rehearsals on Saturday, under the baton of HMS professional chorus master Christopher Hann. The highlight of the evening concert was the massed rendition of Handel's coronation anthem Zadok the Priest and an impromptu performance of Parry's Jerusalem.</p>
-<p>Ross, the society's internationally acclaimed conductor, has been at the helm for more than six years and he is impressed by what HMS has to offer. &#x201c;There are a only a very small number of comparable amateur organisations in the UK,&#x201d; he told The Herald. &#x201c;Mainly they have either a chorus or an orchestra but not both. It's very rare and it brings huge advantages. &#x201c;They can both rehearse in different parts of Haslemere Hall and come together as one unit. &#x201c;Most choral societies have an orchestra that turns up on the day and they have one rehearsal beforehand. HMS has the luxury of working together to build a performance. &#x201c;Without amateur musicians, such as those in HMS, and the dedicated music lovers that come to hear them, there would be no professional music industry. &#x201c;I am an adviser to major record companies and major players in the music industry, and it is really evident what an important dynamic the amateur sector is. &#x201c;The UK is the world's largest market after the US and Japan by a big margin. &#x201c;I'm convinced one of the reasons why it's so disproportionately high in the UK is the active participation by an abnormally high number of people in music compared to almost any other country. Organisations like HMS function largely without state support and their social impact and importance to the community and the country is too often underestimated.&#x201d;</p>
-<p>Mr Ross and HMS's three other professionals - chorus master Christopher Hann, Tom Horn, orchestra leader and assistant conductor, and Clive Osgood, rehearsal pianist and deputy chorus master - all play an &#x201c;extremely important and valuable role in its success&#x201d;, he added. </p>
-
-		<p><em>By Beatrice Phillpotts, Haslemere Herald</em></p>
-	</div>
-</div>
-
 <div class="clear_float"></div>
 
 <div class="content_full_width">
