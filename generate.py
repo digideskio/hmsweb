@@ -35,8 +35,7 @@ _paragraph_re = re.compile(r'(?:\r\n|\r|\n){2,}')
 @jinja2.evalcontextfilter
 def paraText(eval_ctx, value):
 	value = jinja2.escape(value)
-	value = value.replace("\n", "\n\n")
-	value = value.replace(":\n", jinja2.Markup(":<br/>"))
+	value = value.replace("::\n", jinja2.Markup(":<br/>"))
 	paras = value.split("\n")
 	result = "</p>\n<p>".join(paras)
 
@@ -68,7 +67,7 @@ def paraText(eval_ctx, value):
 		result = BOLD.sub(r'<b>\1</b>', result)
 		result_enc = result.decode("utf-8")
 	except Exception, exc:
-		print str(exc)
+		print unicode(exc)
 		import pdb; pdb.set_trace()
 		raise
 
