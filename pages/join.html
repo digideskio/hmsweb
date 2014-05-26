@@ -18,18 +18,25 @@
 <div class="content_col_lhs">
 	<a id="summer_sessions"></a>
 	<h2>{{summerSessions.title}}</h2>
-	{{summerSessions.text | paraText}}
+	<p>{{summerSessions.text | paraText}}</p>
+	{% if summerSessions.flyer %}
+		<a href="{{ summerSessions.flyer }}">Download the flyer</a>
+	{% endif %}
 </div>
 <span class="clear_float"></span>
 
 <div class="img_col">
 	<img id="come_and_sing" src="images/comeAndSing.png" alt="Come and Sing" />
+	<img id="come_and_sing2" src="images/comeAndSing02.png" alt="Come and Sing" />
 </div>
 <div class="content_col">
 	<a id="come_and_sing"></a>
 	<a id="find_your_voice"></a>
 	<h2>{{ comeAndSing.title }}</h2>
-	{{ comeAndSing.text | paraText }}
+	<p>{{ comeAndSing.text | paraText }}</p>
+	{% if comeAndSing.flyer %}
+		<a href="{{ comeAndSing.flyer }}">Download the flyer</a>
+	{% endif %}
 </div>
 <span class="clear_float"></span>
 
