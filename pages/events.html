@@ -28,14 +28,18 @@ orchestra.</p>
 		<span class="location">{{ concert.where }} 
 			{% if concert.where == 'Haslemere Hall' %}
 				(<a href="http://www.haslemerehall.co.uk/" target="_blank">venue</a>)
-			{% elif concert.where == "St Christopher's Church" %}
-				(<a href="https://maps.google.com/maps?ll=51.090114,-0.726321&spn=0.007857,0.019205&fb=1&hq=st+christopher's+church+haslemere&hnear=st+christopher's+church+haslemere&cid=0,0,14877506155288956453&t=h&z=16&iwloc=A" target="_blank">venue</a>)
-			{% endif %}
 		</span>
 		<span class="tickets">
 			Tickets: &pound;8.00 - &pound;15.00</br>
 			Under 18: Half price
 		</span>
+			{% elif concert.where == "St Christopher's Church" %}
+				(<a href="https://maps.google.com/maps?ll=51.090114,-0.726321&spn=0.007857,0.019205&fb=1&hq=st+christopher's+church+haslemere&hnear=st+christopher's+church+haslemere&cid=0,0,14877506155288956453&t=h&z=16&iwloc=A" target="_blank">venue</a>)
+		</span>
+		<span class="tickets">
+			Tickets: &pound;12.50</br>
+		</span>
+			{% endif %}
 
 		<!-- performers -->
 		<table class="performers">
