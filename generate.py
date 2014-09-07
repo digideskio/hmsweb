@@ -52,7 +52,7 @@ def paraText(eval_ctx, value):
 		result = result.replace(u"\xe1",   jinja2.Markup("&aacute;"))
 		result = result.replace( u'\xe9',  jinja2.Markup("&eacute;"))
 		result = result.replace(u'\u2018', jinja2.Markup("&#x2018;")) # ‘
-		result = result.replace(u'\u2018', jinja2.Markup("&#x2019;")) # ‘
+		result = result.replace(u'\u2019', jinja2.Markup("&#x2019;")) # ‘
 		result = result.replace(u'\u201c', jinja2.Markup("&#x201c;")) # “
 		result = result.replace(u'\u201d', jinja2.Markup("&#x201d;")) # ”
 		result = result.replace(u"\xfc",   jinja2.Markup("&uuml;")) # ü

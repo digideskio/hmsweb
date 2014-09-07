@@ -37,26 +37,26 @@ summerSessions:
       small charge is made to cover music hire, venue and refreshments. The
       Society welcomes musicians and singers who are not currently members of the
       Society.
-
-      The sessions for this season will be as follows: 
-
-      bold:Monday 2 June|, Haslemere Hall, Conductor Helen Smee::
-
-      Handel Chandos Anthem No 9 (O Praise The Lord With One Consent)
-
-      bold:Monday 9 June|, Haslemere Hall, Conductor Sarah Thomas::
-
-      Dvořák Stabat Mater	
-
-      bold:Monday 16 June|, St Christopher's Church, Conductor Mark Cardy.  Orchestra only::
-
-      Mendelssohn - A Midsummer Night's Dream
-
-      bold:Monday 23 June|, St Christopher's Church, Conductor Tom Horn.  Orchestra only::
-
-      Coleridge-Taylor - Petite Suite de Concert; Chabrier - Joyeuse Marche; Delibes - Le Roi S'amusee
       "
-   flyer: "images/flyers/summerSessions2014.pdf"
+#      The sessions for this season will be as follows: 
+#
+#      bold:Monday 2 June|, Haslemere Hall, Conductor Helen Smee::
+#
+#      Handel Chandos Anthem No 9 (O Praise The Lord With One Consent)
+#
+#      bold:Monday 9 June|, Haslemere Hall, Conductor Sarah Thomas::
+#
+#      Dvořák Stabat Mater	
+#
+#      bold:Monday 16 June|, St Christopher's Church, Conductor Mark Cardy.  Orchestra only::
+#
+#      Mendelssohn - A Midsummer Night's Dream
+#
+#      bold:Monday 23 June|, St Christopher's Church, Conductor Tom Horn.  Orchestra only::
+#
+#      Coleridge-Taylor - Petite Suite de Concert; Chabrier - Joyeuse Marche; Delibes - Le Roi S'amusee
+#      "
+   flyer: # "images/flyers/summerSessions2014.pdf"
 
 comeAndSing:
    title: Come and Sing

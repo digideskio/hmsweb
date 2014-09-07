@@ -10,8 +10,9 @@ series:
       where: "St Christopher's Church"
       who: "Orchestra"
       flyer:
+      buy_tickets: "http://www.haslemerehall.co.uk/live-music/hms-concert-st-christophers-church/"
       what:
-        - composer: "Debussy (orch. Büsser)"
+        - composer: "Debussy"
           piece: "Petite Suite"
         - composer: "Vaughan Williams"
           piece: "Fantasia on Greensleeves"
@@ -27,6 +28,7 @@ series:
     - date: "6 December 2014"
       where: "Haslemere Hall"
       who: "Orchestra and Chorus"
+      buy_tickets: "http://www.haslemerehall.co.uk/live-music/hms-december-concert/"
       what:
         - composer: "Mozart"
           piece: "Overture Così fan tutte"
@@ -40,6 +42,7 @@ series:
     - date: "7 March 2015"
       where: "Haslemere Hall"
       who: "Orchestra and Chorus"
+      buy_tickets: "http://www.haslemerehall.co.uk/live-music/hms-march-concert/"
       what:
         - composer: "Schubert"
           piece: "Symphony No.9"
@@ -50,6 +53,7 @@ series:
     - date: "9 May 2015"
       where: "Haslemere Hall"
       who: "Orchestra and Chorus"
+      buy_tickets: "http://www.haslemerehall.co.uk/live-music/hms-concert-may-2014/" # url date is mismatched
       what:
         - composer: "Gershwin"
           piece: "Overture Girl Crazy"

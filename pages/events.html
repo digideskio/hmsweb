@@ -18,8 +18,11 @@ orchestra.</p>
 
 	<div class="decor">
 		<span class="perf_img">
+		{% if "chorus" in concert.who.lower() %}
 			<img src="images/choir_1.png" />
-			<!-- <img src="images/strings.jpg" /> -->
+		{% else %}
+			<img src="images/strings.jpg" />
+		{% endif %}
 		</span>
 	</div> <!-- decor -->
 
@@ -64,9 +67,11 @@ orchestra.</p>
 		{% if concert.flyer %}
 		<p><a href="{{ concert.flyer }}" target="_blank">Download Flyer</a></p>
 		{% endif %}
+		{% if concert.buy_tickets %}
 		<span class="perf_button">
-			<a class="link_button" href="http://www.intelligent-tickets.com/index.php?th=hh" target="_blank">Buy Tickets</a>
+			<a class="link_button" href="{{ concert.buy_tickets}}"" target="_blank">Buy Tickets</a>
 		</span>
+		{% endif %}
 
 	</div> <!-- details -->
 
