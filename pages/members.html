@@ -168,7 +168,7 @@
 		<dt>{{ item.category }}
 		<dd><ul>
         {% for date in item.dates %}
-			<li>{{date}}</li>
+			<li>{{date|paraText}}</li>
 		{% endfor %}
 		</ul>
 	{% endfor %}
