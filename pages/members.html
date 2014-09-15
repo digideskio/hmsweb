@@ -138,22 +138,30 @@
 <table>
 	<thead>
 		<th>Date</th>
+    {% if rehearsals.choir_schedule %}
 		<th>Chorus</th>
+    {% endif %}
+    {% if rehearsals.orchestra_schedule %}
 		<th>Orchestra</th>
+    {% endif %}
 	</thead>
 {% for rehearsal in rehearsals.schedule %}
 	<tr>
 		<td>{{rehearsal.date}}</td>
+    {% if rehearsals.choir_schedule %}
 		<td>
 		{% for movement in rehearsal.choir or [] %}
 			{{movement|paraText}}<br/>
 		{% endfor %}
 		</td>
+    {% endif %}
+    {% if rehearsals.orchestra_schedule %}
 		<td>
 		{% for movement in rehearsal.orchestra or [] %}
 			{{movement|paraText}}<br/>
 		{% endfor %}
 		</td>
+    {% endif %}
 	</tr>
 {% endfor %}
 </table>

@@ -13,7 +13,81 @@ rehearsals:
       - "Then from 5th January 2015 to 4th May 2015 in the Haslemere Hall  apart from 23rd March 2015 which will be in St Christopher’s Church and the Methodist Church, Weyhil"
       - "No Rehearsal on Easter Monday 6th April 2015"
 
+    choir_schedule: True
+    orchestra_schedule: False
+
     schedule:
+       - date: 8th September
+         choir:
+             - Kyrie (1 – 8)
+             - Gloria
+             - Qui Tollis 
+
+       - date: 15th September
+         choir:
+             - Kyrie (9 – 13)
+             - Quoniam tu solus
+             - Kyrie (1 – 8)
+
+       - date: 22nd September
+         choir:
+             - Credo
+             - Et incarnatus est
+             - Gloria
+
+       - date: 29th September
+         choir:
+             - Et Resurexit
+             - Qui Tollis
+             - Quoniam tu solus
+
+       - date: 6th October
+         choir:
+             - Sanctus
+             - Credo
+             - Et incarnatus
+
+       - date: 13th October
+         choir:
+             - Benedictus
+             - Sanctus
+             - Dona nobis pacem
+
+       - date: 20th October
+         choir:
+             - Benedictus
+             - Et resurexit
+             - Dona nobis pacem
+
+       - date: 27th October
+         choir:
+             - Kyrie
+             - Gloria
+             - Carols
+
+       - date: 3rd November
+         choir:
+             - Credo 
+             - Carols
+
+       - date: 10th November
+         choir:
+             - Sanctus
+             - Benedictus
+             - Carols
+
+       - date: 17th November
+         choir:
+             - With Orchestra (TBC)
+
+       - date: 24th November
+         choir:
+             - With Orchestra (TBC)
+
+       - date: 1st December
+         choir:
+             - With Orchestra (TBC)
+
 #      - date: Mar 17th
 #        choir:
 #          - Panis Angelicus
