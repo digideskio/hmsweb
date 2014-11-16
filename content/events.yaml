@@ -1,6 +1,6 @@
 next_event:
   series: 0
-  event: 0
+  event: 1
 
 series:
   - name: "2014-2015 Season"
