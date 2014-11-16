@@ -2,125 +2,21 @@
 {% block content %} 
 <div class="content">
 
+<a id="news"></a>
+{% for news_item in news %}	
 <div class="img_col">
-	<img src="images/painter2.png">
+	<img src="{{ news_item.image }}">
 </div>	<!-- img_col -->
 <div class="content_col">
-
-	<a id="news"></a>
-	<h2>Highlights of 2012-2013</h2>
-
-	<p>In October 2012 we had a wonderful Orchestral concert in St Christopher's
-	church with Mozart's overture to Don Giovanni, the Delius Song before
-	Sunrise and Schubert's Symphony No 6. The highlight of the evening was
-	Helen Owlett's beautiful clarinet playing in Weber's Clarinet Concerto
-	and Finzi's Five Bagatelles. </p>
-
-	<p>We are indeed fortunate to have such talent in our Orchestra. The December
-	concert was a sell out for The Messiah (excerpts) and Beethoven's Symphony
-	No 6, the Pastoral. Both were enthusiastically received by the large audience.
-	In February we had a hugely successful Come and Sing in St Christopher's
-	Church when Christopher Hann, our new Chorus Master, rehearsed a choir of over
-	100 in Faur&eacute;'s Requiem with Clive Osgood on the organ. </p>
-
-	<p>We were then joined by a small orchestra (mostly HMS members) for the
-	performance which added much to the pleasure of the event for all present.
-	Christopher has been a great success in everything he has done with us
-	throughout his first season with us. </p>
-
-	<img src="images/stChristophers.png"/>
-
-	<p>The performance of Mendelssohn's Elijah in March was outstanding. Orchestra
-	and Chorus were at their best on the night and the soloists were superb. Thanks
-	to the sterling efforts of members of the Society in publicising the concert
-	and selling tickets we had a near full house with only a few unsold seats
-	downstairs.</p>
-
+      {% if news_item.title %}
+  	  <h2>{{ news_item.title }}</h2>
+      {% endif %}
+  	  {{ news_item.body|paraText }}
 </div>	<!-- content_col -->
 
 <div class="clear_float"></div>
+{% endfor %}
 
-<div class="img_col_rhs">
-	<img src="images/choristers.png">
-</div>	<!-- img_col -->
-<div class="content_col_lhs">
-
-	<p>The 2012 - 2013 HMS season ended on 4th May with a widely acclaimed concert of
-	Opera Highlights.  This was a lighter than usual programme of music by Rossini,
-	Donizetti, Gounod, Verdi, Mascagni, Puccini and Wagner which was performed by
-	the orchestra and chorus with great enthusiasm.  An innovation was the
-	inclusion of arias sung by three St Edmund's School (Hindhead) choristers.</p>
-
-	<p>They delighted the audience with their remarkable vocal skill and their poise
-	on stage.  The soprano soloist in Mascagni's Easter Hymn from Cavalleria
-	Rusticana was local singer Joanna Bywater who gave a radiant performance.
-	Altogether the concert was recognised as a tremendous tribute to local talent.</p>
-
-	<p>During June the Society traditionally has four sessions which are open to
-	anyone who wishes to play an instrument or sing for pleasure.  These Summer
-	Sessions have different conductors who rehearse and then run through different
-	works.  In the first half of the first session the orchestra leader, Tom Horn,
-	guided the orchestra through Dukas' Sorcerer's Apprentice, a challenging piece
-	which in the final run through conjured up images of Disney's Mickey Mouse in
-	the film Fantasia. </p>
-
-	<p>The orchestra and choir came together after the break and under the baton of
-	Chorus Master Christopher Hann produced a rousing performance of Handel's
-	Zadok the Priest and The King Shall Rejoice.</p>
- 
-</div>	<!-- content_col -->
-
-<div class="img_col">
-	<img src="images/tomHornCu.png">
-</div>	<!-- img_col -->
-<div class="content_col">
-	<p>The second session also involved both orchestra and choir.  Tom Horn
-	conducted the orchestra for two pieces, one by Rawsthorne and one by Debussy
-	while Sarah Thomas, a music student, rehearsed Parry's I was Glad with the
-	choir.  The final run-through involved orchestra and choir energetically
-	performing the Parry under the baton of Sarah.</p>
-
-	<p>There was an innovation in the third session when the orchestra split into
-	separate string and wind sections.  Christopher Hann took the strings for
-	Dvor&#780;&aacute;k's delightful Serenade while the wind section enjoyed rehearsing another
-	Dvor&#780;&aacute;k work, his Czech Suite under the baton of guest conductor, Bob
-	Haselip.</p>
-
-	<p>For the final session guest conductor Mark Cardy accepted the challenge to
-	conduct two movements from Holst's Planets Suite:  Mars and Jupiter. This time
-	the session was held in Grayswood Village Hall, not the Haslemere Hall and the
-	orchestra managed to produce a resounding sound in the final run-through.</p>
-
-	<p>The four sessions proved the value of giving the opportunity to musicians to
-	experience a wide range of music and conducting styles and to tackle new works
-	with great enjoyment.</p>
-
-</div>	<!-- content_col -->
-
-<div class="clear_float"></div>
-
-<div class="img_col_rhs">
-	<img src="images/90thParty.png">
-</div>	<!-- img_col -->
-<div class="content_col_lhs">
-	<h2>HMS Anniversary Party</h2>
-
-	<p>What a great way to end the HMS 90th Anniversary year in 2013!</p>
-
-	<p>Members enjoyed a glass of mulled wine and tucked in to Lorraine Collins'
-	wonderful Celebration Cake which not only looked great but was also delicious!</p>
-
-	<p>December 2013 was a memorable month for HMS members. The concert on the 7th was
-	a great success and much admired by both the audience and the reviewer. A special
-	triumph was the re-incarnation of the Beethoven Eroica Symphony, played with piano
-	support at the first HMS concert in 1923 but this time played with aplomb by the
-	full orchestra.  The choir also excelled itself in the Vivaldi Gloria and the Bach Wachet Auf
-	winning accolades all round.</p>
-
-</div>	<!-- content_col -->
-
-
-<div class="clear_float"></div>
 <a id="member_information"></a>
 <h2>Member information</h2>
 

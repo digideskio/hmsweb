@@ -1,3 +1,65 @@
+news:
+  - title: A Triumphant Anniversary Year
+    image: images/painter2.png
+    body:
+      "The season 2013 – 2014 embraced the 90th anniversary of the Haslemere Musical
+      Society and began with the orchestral concert in October in St Christopher’s
+      Church, Weyhill.   Our reviewer commended the performance of an ambitious
+      programme of music and mentioned particularly the oboe playing of David
+      Farnworth partnered by some excellent flute, clarinet and horn playing in both
+      Fauré’s Pelléas et Mélisande and Ravel’s Le Tombeau de Couperin. In the second
+      half of the evening the orchestra performed Brahms’s Serenade No 1 which opened
+      with some splendid horn playing by Roger Doulton.  The Church was almost full
+      and the audience was treated to a splendid evening of music.
+      
+      December 2013 was memorable for celebrating the 90th Anniversary of the Society
+      with the Beethoven Eroica Symphony.  It was played with piano support at the
+      first HMS concert in 1923 but in 2013 the full orchestra played it with great
+      aplomb. The choir also excelled itself in the Vivaldi Gloria and the Bach
+      Wachet Auf, the latter conducted by the chorus master, Christopher Hann.
+      
+      The March 2014 concert began with the orchestra showing great energy in
+      Dvoṙắk’s Symphony No 6, the highlight being the Scherzo, which the audience
+      found very exciting. The chorus performed well in Bruckner’s Locus Iste and
+      gave an impressive rendering in Bruckner’s Mass in D Minor.  In the Mass the
+      choir was well supported by four local soloists, Eleanor Rastall, Joanna
+      Bywater, Mark Evans and Edward Roberts.
+      
+      The final concert of the season was on 10th May and featured a splendidly-
+      mixed programme ranging from light-hearted to religious and royal grandeur.
+      The concert began with Brahms’s Academic Festival Overture with the chorus
+      battling to be heard above the orchestra in the finale.  The programme included
+      several small choral works, Bach’s Ave Maria, Franck’s Psalm 150 and Panis
+      Angelicus, Mozart’s Ave Verum Corpus and three of the Coronation Anthems by
+      Handel but the highlight of the evening was undoubtedly the orchestra leader
+      Tom Horn playing in Bruch’s Scottish Fantasy."
+      
+  - image: "images/summerSessions02.png"
+    body:
+      Other HMS events were the ‘Come and Sing’ on 1st February in St Christopher’s
+      Church when Christopher Hann rehearsed a chorus of about one hundred singers in
+      Handel’s Zadok the Priest and Parry’s I Was Glad and Blest Pair of Sirens. The
+      orchestra joined the chorus for the final run through which was enjoyed by a
+      small audience.  A rousing rendering of Parry’s Jerusalem ended a very
+      successful afternoon.  
+      
+      Then in May there was the ‘Find Your Voice’ evening when interested singers
+      were invited to try out their voices for free.  This was a most enjoyable
+      occasion again in St Christopher’s Church and again conducted by Christopher
+      Hann.  
+      
+      On June 21st in remarkably fine weather guests were treated to a delightful
+      evening in the garden of Thea Jourdan and David Lord.  While enjoying a
+      delicious buffet supper, diners listened to music played by Joe Yeadon’s
+      Godalming College Jazz Band.
+      
+      The summer would not be complete without the Summer Sessions in June organised
+      by the orchestra as sight-reading sessions for instrumentalists.  The chorus
+      was privileged to join in the first two sessions. The Society has made a great
+      start to the 2014 – 2015 Season.  The Chorus is larger than it has ever been
+      and the orchestra is excelling itself. "
+      
+
 rehearsals:
 
     location:
@@ -9,7 +71,6 @@ rehearsals:
         also sometimes rehearses in St Christopher's Church, Weyhill."
 
     exceptions:
-      - "Every Monday evening from 8th September 2014 to 15th December 2014 in the Haslemere Hall apart from 20th and 27th October 2014 which will be in St Christopher’s Church and the Methodist Church, Weyhill"
       - "Then from 5th January 2015 to 4th May 2015 in the Haslemere Hall  apart from 23rd March 2015 which will be in St Christopher’s Church and the Methodist Church, Weyhil"
       - "No Rehearsal on Easter Monday 6th April 2015"
 
@@ -17,76 +78,23 @@ rehearsals:
     orchestra_schedule: False
 
     schedule:
-       - date: 8th September
-         choir:
-             - Kyrie (1 – 8)
-             - Gloria
-             - Qui Tollis 
-
-       - date: 15th September
-         choir:
-             - Kyrie (9 – 13)
-             - Quoniam tu solus
-             - Kyrie (1 – 8)
-
-       - date: 22nd September
-         choir:
-             - Credo
-             - Et incarnatus est
-             - Gloria
-
-       - date: 29th September
-         choir:
-             - Et Resurexit
-             - Qui Tollis
-             - Quoniam tu solus
-
-       - date: 6th October
-         choir:
-             - Sanctus
-             - Credo
-             - Et incarnatus
-
-       - date: 13th October
-         choir:
-             - Benedictus
-             - Sanctus
-             - Dona nobis pacem
-
-       - date: 20th October
-         choir:
-             - Benedictus
-             - Et resurexit
-             - Dona nobis pacem
-
-       - date: 27th October
-         choir:
-             - Kyrie
-             - Gloria
-             - Carols
-
-       - date: 3rd November
-         choir:
-             - Credo 
-             - Carols
-
-       - date: 10th November
-         choir:
-             - Sanctus
-             - Benedictus
-             - Carols
-
        - date: 17th November
          choir:
-             - With Orchestra (TBC)
+           - Credo
+           - Sanctus
+           - Benedictus
+           - Carols
 
        - date: 24th November
          choir:
-             - With Orchestra (TBC)
+           - Kyrie 
+           - Gloria
+           - Dona Nobis Pacem
+           - Carols
 
        - date: 1st December
          choir:
-             - With Orchestra (TBC)
+             - Complete run of everything
 
 #      - date: Mar 17th
 #        choir:
@@ -102,18 +110,13 @@ rehearsals:
 
 future_dates:
   title: Season 2014-2015
-  text: First rehearsal 8th September
-
+  text: ""
   dates: 
       - category: Concert dates
         dates:
-          - 18th September 2014 orchestra only in St Christopher’s Church Weyhill
           - 6th December 2014 orchestra and chorus in the Haslemere Hall
           - 7th March 2015 orchestra and chorus in the Haslemere Hall
           - 9th May 2015 orchestra and chorus in the Haslemere Hall
-      - category: AGM
-        dates:
-          - 3rd November 2014 in the Haslemere Hall after a shortened rehearsal.
 
 external_links:
   - label: Choraline

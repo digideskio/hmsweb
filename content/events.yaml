@@ -1,6 +1,9 @@
 next_event:
   series: 0
   event: 1
+  promoted:
+    - 1
+    - 2
 
 series:
   - name: "2014-2015 Season"
@@ -25,9 +28,11 @@ series:
           piece: "Symphony No.31"
           comment: "(Paris)"
 
-    - date: "6 December 2014"
+    - name: "December Concert"
+      date: "6 December 2014"
       where: "Haslemere Hall"
       who: "Orchestra and Chorus"
+      flyer: "images/flyers/concert_2014_12_06.pdf"
       buy_tickets: "http://www.haslemerehall.co.uk/live-music/hms-december-concert/"
       what:
         - composer: "Mozart"
@@ -38,6 +43,32 @@ series:
           piece: "Nelson Mass in D minor"
         - composer: "Christmas Carols"
           piece: "for chorus, audience and orchestra"
+
+    - name: "Come and Sing: Mozart Requiem"
+      date: "7th February 2014"
+      image: "images/summerSessions02.png"
+      conductor:
+        name: Christopher Hann
+        link: "about.html#chorus_master"
+      where: "St Christopher's Church"
+      price: "10-12"
+      who: "All welcome"
+      description: "
+        The Haslemere Musical Society’s well-loved ‘Come and Sing’ will, as before,take
+        place in the delightful St Christopher’s Church, Weyhill.  After his highly
+        successful event in February 2014 we have persuaded Christopher Hann to take
+        the baton again (even though he will have moved on and will no longer be the
+        Society’s Chorus Master).  The date for 2015 is Saturday 7th February and the
+        work to be rehearsed will be choruses from Mozart’s ‘Requiem’.  Local Soprano,
+        Sarah Thomas will sing the soprano solos in those passages where a soprano
+        soloists sings in addition to the chorus.
+
+        The flyer below contains more details about participating.
+      "
+      what:
+        - composer: "Mozart"
+          piece: "Requiem"
+      flyer: "images/flyers/come and sing 2015 flyer.pdf"
 
     - date: "7 March 2015"
       where: "Haslemere Hall"

@@ -57,6 +57,9 @@ def paraText(eval_ctx, value):
 		result = result.replace(u'\u201d', jinja2.Markup("&#x201d;")) # ”
 		result = result.replace(u"\xfc",   jinja2.Markup("&uuml;")) # ü
 		result = result.replace(u'\xec',   jinja2.Markup("i")) # ì
+		result = result.replace(u"\u1e59",   jinja2.Markup("&#x1E59;"))
+		result = result.replace(u"\u1eaf",   jinja2.Markup("&#x1EAF;"))
+		result = result.replace(u"\u2019",   jinja2.Markup("&#x2019;"))
 
 		if MAILTO.search(result):
 			result = MAILTO.sub(r'<a href="mailto:\1">\2</a>', result)

@@ -10,18 +10,25 @@ in the Haslemere Hall.  An additional orchestral concert is held in St
 Christopher's Church, Weyhill, often featuring a soloist from within the
 orchestra.</p>
 
-{% for concert in (series[next_event.series]['events'][next_event.event],) %}
+{% for concert_idx in next_event.promoted %}
+{% set concert = series[next_event.series]['events'][concert_idx] %}
 <a id="latest_concert"></a>
 <h3>{{ concert.name }}</h3>
+
+<p>{{ concert.description|paraText}}</p>
 
 <div class="performance">
 
 	<div class="decor">
 		<span class="perf_img">
-		{% if "chorus" in concert.who.lower() %}
-			<img src="images/choir_1.png" />
+		{% if concert.image %}
+		  	<img src="{{ concert.image }}" />
 		{% else %}
-			<img src="images/strings.jpg" />
+		  {% if "chorus" in concert.who.lower() %}
+		  	<img src="images/choir_1.png" />
+		  {% else %}
+		  	<img src="images/strings.jpg" />
+		  {% endif %}
 		{% endif %}
 		</span>
 	</div> <!-- decor -->
@@ -33,14 +40,18 @@ orchestra.</p>
 				(<a href="http://www.haslemerehall.co.uk/" target="_blank">venue</a>)
 		</span>
 		<span class="tickets">
-			Tickets: &pound;8.00 - &pound;15.00</br>
+			Tickets: &pound;16, &pound;10  &amp; &pound;6</br>
 			Under 18: Half price
 		</span>
 			{% elif concert.where == "St Christopher's Church" %}
 				(<a href="https://maps.google.com/maps?ll=51.090114,-0.726321&spn=0.007857,0.019205&fb=1&hq=st+christopher's+church+haslemere&hnear=st+christopher's+church+haslemere&cid=0,0,14877506155288956453&t=h&z=16&iwloc=A" target="_blank">venue</a>)
 		</span>
 		<span class="tickets">
+			{% if concert.price %}
+			Tickets: &pound;{{ concert.price }}</br>
+			{% else %}
 			Tickets: &pound;12.50</br>
+			{% endif %}
 		</span>
 			{% endif %}
 
@@ -48,7 +59,11 @@ orchestra.</p>
 		<table class="performers">
 			<tr>
 				<td class="conductor_label">Conductor</td>
+			{% if concert.conductor %}
+				<td class="conductor_value"><a href="{{ concert.conductor.link }}">{{ concert.conductor.name }}</a></td>
+			{% else %}
 				<td class="conductor_value"><a href="about.html#musical_director">James Ross</a></td>
+			{% endif %}
 			</tr>
 		</table>
 		<!-- performance  works -->
