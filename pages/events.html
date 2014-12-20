@@ -99,14 +99,19 @@ orchestra.</p>
 	<a id="season"></a>
 {% for season in series[next_event.series:] %}
 
-	<h3>{{season.name}}</h3>
+	<h3>Other {{season.name}} Events</h3>
 
 	<table>
 		<thead>
 		<tr><th>Date/Location</th><th>Performers</th><th>Works</th></tr>
 		</thead>
 		<tbody>
-		{% for ev in season.events[next_event.event+1:] %}
+		{% for ev in season.events %}
+			<!-- Any events which haven't already happened or are already
+				 promoted above -->
+			{% if loop.index0 < next_event.event or loop.index0 in next_event.promoted %}
+			{% continue %}
+			{% endif %}
 		<tr>
 			<td>{{ev.date}}<br/>
 			{{ev.where}}</td>

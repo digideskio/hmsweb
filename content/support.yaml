@@ -22,6 +22,7 @@ membership:
              - Mr & Mrs J. Reynolds
              - Mr D. Shorrock
              - Mrs K. Siebert
+             - Mr D. Walker
 
     patron: 
         title: Become a Patron
@@ -35,41 +36,44 @@ membership:
 
         people_title: "Patrons"
         people:
-             - Mr & Mrs M.F. Barnes
-             - Mr S. Bennett
-             - Mr M.H. Biddiscombe
-             - Mr S.M. Brown
-             - Mr L Burgess
-             - Mrs C. Christian
-             - Mr & Mrs H. Donaldson
-             - Mrs C.J. Eraut
-             - Mrs S. Falk
-             - Mr & Mrs B. Farley
-             - Mrs H. Farrer
-             - Mrs R.M. Flower
-             - Mrs B. Goulston
-             - Mrs V. Hardwick
-             - Mr P. Harrison
-             - Mrs M. Hull
-             - Mr & Mrs J. Jackson
-             - Mr B. Jeffcote
-             - Mr J.W. Jeffrey MBE & Mrs S. Jeffrey
-             - Mrs M. Kirkman
-             - Sir Anthony Laughton & Lady Laughton
-             - Mr J. McDonald
-             - Ms T. McLeod
-             - Mrs M.K. Musk
-             - Mr A. Ramsden
-             - Mr N.H. Rogers
-             - Dr D.M. Samways
-             - Mr & Mrs C.M. Scholfield
-             - Mr P. Sharpe
-             - Mrs T. Slade
-             - Mr D. Trout
-             - Mr N.J.T. Tyrrell-Evans
-             - Dr C. Warner
-             - Mr D. White
-             - Mrs C. Willis
+            - Mr & Mrs M.F. Barnes
+            - Mr & Mrs S.J. Bennett
+            - Mr M.H. Biddiscombe 
+            - Mrs. H. Brading
+            - Mr S.M. Brown
+            - Mr L. Burgess
+            - Mr & Mrs H. Donaldson
+            - Mrs C.J. Eraut 
+            - Mrs S. Falk
+            - Mr & Mrs B. Farley
+            - Mrs H. Farrer
+            - Mrs R.M. Flower
+            - Mrs B. Goulston
+            - Mrs V. Hardwick
+            - Mr P. Harrison
+            - Mrs. L. Hazelwood
+            - Brigadier J.A. Jackson
+            - Mr & Mrs J. Jackson
+            - Mr B. Jeffcote 
+            - Mr J.W. Jeffrey MBE & Mrs S. Jeffrey
+            - Mr M. Jourdan
+            - Mrs M. Kirkman
+            - Sir Anthony Laughton & Lady Laughton
+            - Mr J. McDonald
+            -  Ms T. McLeod
+            - Mrs M.K. Musk
+            - Mr A. Ramsden
+            - Mr N.H. Rogers
+            - Dr D.M. Samways
+            - Mr & Mrs C.M. Scholfield
+            - Mr P. Sharpe
+            - Mrs T. Slade 
+            - Mrs J. Stopford
+            - Mr D. Trout
+            - Mr N.J.T. Tyrrell-Evans
+            - Dr C. Warner
+            - Mr D. White
+            - Mrs C. Willis
 
     contact:
         "John Jackson, Chairman of HMS, would be delighted to hear from anyone

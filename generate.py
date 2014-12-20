@@ -95,7 +95,7 @@ def generateSite(parentDir, templateDir, pagesDir, contentDir, siteDir):
 	""" Generate the site
 	"""
 	loader = jinja2.FileSystemLoader(['templates', 'pages'])
-	env = jinja2.Environment(loader=loader)
+	env = jinja2.Environment(loader=loader, extensions=['jinja2.ext.loopcontrols'])
 	env.trim_blocks = True
 	env.autoescape = True
 	env.filters['paraText'] = paraText

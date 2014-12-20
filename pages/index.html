@@ -28,7 +28,10 @@
 
 	<div id="concert_promo" class="event_promo">
 
-{% for concert in (__all__.events.series[__all__.events.next_event.series]['events'][__all__.events.next_event.event],) %}
+{% set next_event = __all__.events.next_event %}
+{% set series = __all__.events.series %}
+{% for concert_idx in next_event.promoted %}
+{% set concert = series[next_event.series]['events'][concert_idx] %}
 		<h3><a href="events.html">{{ concert.name }}</a></h3>
 
 		<div class="details">
@@ -46,24 +49,6 @@
 			</dl>
 		</div>
 {% endfor %}
-		<div class="clear_float"></div>
-	</div>
-
-
-	<div id="concert_promo" class="event_promo">
-
-		<h3><a href="events.html#come_and_sing">Come and Sing: Booking Now Open</a></h3>
-		<div class="details">
-
-			<span class="date">Saturday 7<sup>st</sup> February</span>,
-			<span class="location">St Christopher's Church</span>,
-			<span class="when">14.00</span></br>
-			<dl class="works">
-				<dt>Mozart:</dt>
-				<dd>Requiem</dd>
-			</dl>
-		</div>
-
 		<div class="clear_float"></div>
 	</div>
 

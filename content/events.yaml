@@ -1,9 +1,9 @@
 next_event:
   series: 0
-  event: 1
+  event: 2
   promoted:
-    - 1
     - 2
+    - 3
 
 series:
   - name: "2014-2015 Season"
@@ -45,7 +45,7 @@ series:
           piece: "for chorus, audience and orchestra"
 
     - name: "Come and Sing: Mozart Requiem"
-      date: "7th February 2014"
+      date: "7th February 2015"
       image: "images/summerSessions02.png"
       conductor:
         name: Christopher Hann
@@ -71,6 +71,7 @@ series:
       flyer: "images/flyers/come and sing 2015 flyer.pdf"
 
     - date: "7 March 2015"
+      name: "Spring Concert"
       where: "Haslemere Hall"
       who: "Orchestra and Chorus"
       buy_tickets: "http://www.haslemerehall.co.uk/live-music/hms-march-concert/"
@@ -82,6 +83,7 @@ series:
           piece: "Stabat Mater"
 
     - date: "9 May 2015"
+      name: "Summer Concert"
       where: "Haslemere Hall"
       who: "Orchestra and Chorus"
       buy_tickets: "http://www.haslemerehall.co.uk/live-music/hms-concert-may-2014/" # url date is mismatched
